@@ -1,0 +1,826 @@
+{
+    "None": {
+        "highest": [
+            {
+                "q1": "What is the best job of SSC CGL?",
+                "q2": "Which is the best job in SSC CGL?",
+                "similarity": 0.8867808670610468
+            },
+            {
+                "q1": "Is Google actually replacing Nexus with Pixel?",
+                "q2": "Why is Google replacing Nexus with Pixel?",
+                "similarity": 0.8869420169973238
+            },
+            {
+                "q1": "What is the average salary of a software engineer in Google Sydney?",
+                "q2": "What is the average salary of a fresher (software engineer) in Google Sydney?",
+                "similarity": 0.9060555829879645
+            },
+            {
+                "q1": "How one can make use of its brain to its maximum potential?",
+                "q2": "How one can make use of his brain to its maximum potential?",
+                "similarity": 0.9063807214759647
+            },
+            {
+                "q1": "What are the strongest majors in terms of job prospects and what are the weakest majors at Winthrop University?",
+                "q2": "What are the strongest majors in terms of job prospects and what are the weakest majors at Marshall University?",
+                "similarity": 0.9085146240722495
+            },
+            {
+                "q1": "How do I start an online advertising company?",
+                "q2": "How do I start an advertising company?",
+                "similarity": 0.9093801935520178
+            },
+            {
+                "q1": "How are Bulova watches made?",
+                "q2": "Where are bulova watches made?",
+                "similarity": 0.9107543232214685
+            },
+            {
+                "q1": "What are the best shared office space in Bangalore Indiranagar?",
+                "q2": "Where is the best shared office space in Bangalore Indiranagar?",
+                "similarity": 0.9263092489760145
+            },
+            {
+                "q1": "What hotel in Jabalpur would be safe for unmarried couples, without the harassment of police, hotel staff, and moral police?",
+                "q2": "What hotel in Allahabad would be safe for unmarried couples, without the harassment of police, hotel staff, and moral police?",
+                "similarity": 0.9329355749910764
+            },
+            {
+                "q1": "Why does this \u201cCold War thinking\u201d still not obsolete?",
+                "q2": "Why does \u201cCold War thinking\u201d still not obsolete?",
+                "similarity": 0.9438311496488349
+            },
+            {
+                "q1": "How can I determine the operating pump head?",
+                "q2": "How can I determine pump the operating pump head?",
+                "similarity": 0.9454035274346919
+            },
+            {
+                "q1": "Do paradoxes exist?",
+                "q2": "Why do paradoxes exist?",
+                "similarity": 0.945751937198485
+            },
+            {
+                "q1": "Television Production: How does someone go about building up a network to get a job in LA/Hollywood?",
+                "q2": "Television Production: How does someone go about building up a network to get a job in LA?",
+                "similarity": 0.9527319989265766
+            },
+            {
+                "q1": "Do special tatkal trains run on time?",
+                "q2": "Do special Tatkal trains run in time?",
+                "similarity": 0.9564331958384629
+            },
+            {
+                "q1": "Do you like Virat Kohli?",
+                "q2": "Why do you like Virat Kohli?",
+                "similarity": 0.9606220682157091
+            },
+            {
+                "q1": "Is diploma equivalent to graduation?",
+                "q2": "Why is a diploma equivalent to a graduation?",
+                "similarity": 0.9636663064176301
+            },
+            {
+                "q1": "Why do you believe in astrology?",
+                "q2": "Do you believe in astrology and why?",
+                "similarity": 0.965239767440313
+            },
+            {
+                "q1": "What's your favorite music album of all time?",
+                "q2": "What is your all-time favorite music album?",
+                "similarity": 0.967553840383815
+            },
+            {
+                "q1": "What are the different java programming platforms?",
+                "q2": "What are the different programming platforms for Java?",
+                "similarity": 0.9737534029365523
+            },
+            {
+                "q1": "What are the pros and cons of becoming an angel investor?",
+                "q2": "What are pros and cons of becoming an angel investor?",
+                "similarity": 0.9928066733374357
+            }
+        ],
+        "lowest": [
+            {
+                "q1": "What is the procedure to join the Bomb Detection and Disposal Squad after metallurgy engineering?",
+                "q2": "Where can we get medical reports in Delhi?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Did all Waffen SS commit crimes against humanity?",
+                "q2": "What is diagtrack what is diag track?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Filial piety and humaneness?",
+                "q2": "What kind of patients mostly die in a hospital?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Sap abap jobs in Hyderabad for freshers?",
+                "q2": "How can I upgrade my kitchenaid proline espresso machine's steam wand?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Why did globalisation happen when it did?",
+                "q2": "What policies are adopted by Apple for music player and PC?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Why did Val Valentino give reveal the secrets of magicians?",
+                "q2": "Is Dynamo's (Steven Frayne) magic real?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Which mobile phone should I buy - a Galaxy Note 5 or an S6 Edge Plus?",
+                "q2": "What are the signs of a chemical reaction and does the type of chemical used give a different sign?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Was Lord Melbourne ever considered an attractive gentleman?",
+                "q2": "How can I be, what I can describe?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "How did Jacoby Brisset get mentored by Bill Parcells since high school?",
+                "q2": "Are you satisfied with your sex life?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "What are the best activities to do with children when visiting Sangli, Maharashtra, India?",
+                "q2": "How can I avoid bad thoughts during work?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Web based reporting tool for MongoDB?",
+                "q2": "What would Hillary Clinton Have To Do To Serve Time?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "When does up govt. scholarship (b. Tech) come to students acc.?",
+                "q2": "Lisa how do you know which country I live in?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Why do spicy foods make my jaw and neck hurt?",
+                "q2": "Windows 10 Customer support?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "Why current in capacitor leading?",
+                "q2": "Do you love your job as a programmer? Is every challenging thing enjoyable ? I'm a graphic designer and I love it. Will I love programming ?",
+                "similarity": 0.0
+            },
+            {
+                "q1": "What is the ideal shuttle speed for filming at 25 fps? I try 1/50 but it wasn't really nice.",
+                "q2": "Which is better of Mi Max and Moto G4 Plus?",
+                "similarity": 0.010879450808533428
+            },
+            {
+                "q1": "Can a target market evolve over time based on adding additional more robust features?",
+                "q2": "GAURAV GOEL SIR can u plz provide me notes for ies2017,I need to clear it in very first attempt.A little help from u will make my dream come true, plz?",
+                "similarity": 0.01254826645975829
+            },
+            {
+                "q1": "What does girls' instinct means? Is girls\u2019 instinct true?",
+                "q2": "What are some human primal instincts?",
+                "similarity": 0.01414473092458572
+            },
+            {
+                "q1": "What kinds of compounds does the element form?",
+                "q2": "What advice would you give to an engineering student in his first internship?",
+                "similarity": 0.014987195573603607
+            },
+            {
+                "q1": "Do we have Financial Management in IPCC group 1 in may 2017? Websites show change in syllabus.",
+                "q2": "I am trying to become a math scholar. What books do you recommend?",
+                "similarity": 0.017980936009141302
+            },
+            {
+                "q1": "Will Theon meet the Starks again?",
+                "q2": "Are you going to push to improve the ACA?",
+                "similarity": 0.01816695169598644
+            }
+        ]
+    },
+    "1": {
+        "highest": [
+            {
+                "q1": "What were the major effects of the cambodia earthquake, and how do these effects compare to the Andreanof Islands earthquake in 1957?",
+                "q2": "What were the major effects of the cambodia earthquake, and how do these effects compare to the Cascadia earthquake in 1700?",
+                "similarity": 0.838864602182388
+            },
+            {
+                "q1": "Is Google actually replacing Nexus with Pixel?",
+                "q2": "Why is Google replacing Nexus with Pixel?",
+                "similarity": 0.84007368287956
+            },
+            {
+                "q1": "Who is the biggest traitor in the history of Austria?",
+                "q2": "Who is the biggest traitor in the history of Poland?",
+                "similarity": 0.8441995338776642
+            },
+            {
+                "q1": "What universities does Logmein recruit new grads from? What majors are they looking for?",
+                "q2": "What universities does Express recruit new grads from? What majors are they looking for?",
+                "similarity": 0.8483908832421281
+            },
+            {
+                "q1": "How does Google measure the use over time for words?",
+                "q2": "How does Google calculate the use over time of words?",
+                "similarity": 0.8550266372471053
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at CMS Energy?",
+                "q2": "What are some things new employees should know going into their first day at Anatolia Energy?",
+                "similarity": 0.8565636069581525
+            },
+            {
+                "q1": "What is the best advice you've ever been given?",
+                "q2": "What is the best advice you have ever been given?",
+                "similarity": 0.8587576871937054
+            },
+            {
+                "q1": "What is unusual or different about the food and cuisine in Mexico?",
+                "q2": "What is unusual or different about the food and cuisine in Israel?",
+                "similarity": 0.8618117644237783
+            },
+            {
+                "q1": "Which are the best adult comedy movie in Hollywood?",
+                "q2": "Which are the best Hollywood comedy movies?",
+                "similarity": 0.8686835125332758
+            },
+            {
+                "q1": "What are the pros and cons of becoming an angel investor?",
+                "q2": "What are pros and cons of becoming an angel investor?",
+                "similarity": 0.8767927409503434
+            },
+            {
+                "q1": "What are the strongest majors in terms of job prospects and what are the weakest majors at Winthrop University?",
+                "q2": "What are the strongest majors in terms of job prospects and what are the weakest majors at Marshall University?",
+                "similarity": 0.8778961915524095
+            },
+            {
+                "q1": "What is your review of Volkswagen Polo petrol?",
+                "q2": "What is your review of Volkswagen Polo?",
+                "similarity": 0.8858879704538043
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at Chart Industries?",
+                "q2": "What are some things new employees should know going into their first day at CSS Industries?",
+                "similarity": 0.8923217298232995
+            },
+            {
+                "q1": "What are some tips on making it through the job interview process at Noble?",
+                "q2": "What are some tips on making it through the job interview process at Quantum?",
+                "similarity": 0.9024413795269836
+            },
+            {
+                "q1": "Television Production: How does someone go about building up a network to get a job in LA/Hollywood?",
+                "q2": "Television Production: How does someone go about building up a network to get a job in LA?",
+                "similarity": 0.9221927510311798
+            },
+            {
+                "q1": "How do I start an online advertising company?",
+                "q2": "How do I start an advertising company?",
+                "similarity": 0.9248913434601567
+            },
+            {
+                "q1": "What are the different java programming platforms?",
+                "q2": "What are the different programming platforms for Java?",
+                "similarity": 0.939727158350943
+            },
+            {
+                "q1": "What are the best shared office space in Bangalore Indiranagar?",
+                "q2": "Where is the best shared office space in Bangalore Indiranagar?",
+                "similarity": 0.9397642353480733
+            },
+            {
+                "q1": "How do I get backlinks indexed faster?",
+                "q2": "How can I get backlinks index faster?",
+                "similarity": 0.948504841648024
+            },
+            {
+                "q1": "How are Bulova watches made?",
+                "q2": "Where are bulova watches made?",
+                "similarity": 1.0
+            }
+        ],
+        "lowest": [
+            {
+                "q1": "Can a target market evolve over time based on adding additional more robust features?",
+                "q2": "GAURAV GOEL SIR can u plz provide me notes for ies2017,I need to clear it in very first attempt.A little help from u will make my dream come true, plz?",
+                "similarity": 0.0009230373999990614
+            },
+            {
+                "q1": "Can polar bears and penguins not adapt through natural selection to the warmer environments humans are creating for them?",
+                "q2": "In the game 'Magium text', can the last two achievements of the chapter 6 in book 1 be achieved?",
+                "similarity": 0.0011394294565599326
+            },
+            {
+                "q1": "Can I use two Jio sim on one dual sim phone?",
+                "q2": "Why in Naruto: Shippuden The Longest moment epsiode the chair Itachi was sitting on had one black dot on each side of his head?",
+                "similarity": 0.0012446578155915792
+            },
+            {
+                "q1": "To what extent can advertising a product concept to see likes/clicks targeting on Facebook result accidentally cause to incorrectly analyze the data for what it means you should do?",
+                "q2": "What are some interesting results Daniel Ek learned analyzing Spotify's user data?",
+                "similarity": 0.0013362282512754794
+            },
+            {
+                "q1": "Which mobile phone should I buy - a Galaxy Note 5 or an S6 Edge Plus?",
+                "q2": "What are the signs of a chemical reaction and does the type of chemical used give a different sign?",
+                "similarity": 0.0013506239476403128
+            },
+            {
+                "q1": "Why do new investors open account with ICICI direct when they can save 90% with Fyers / Other discount brokers?",
+                "q2": "Would you buy a handbag online? If not, Why not?",
+                "similarity": 0.0013532025644018746
+            },
+            {
+                "q1": "Who was started Social Media war between Indian and Pakistani?",
+                "q2": "Which army special unit is much more experienced and well trained, the SSG(N) or the MARCOS?",
+                "similarity": 0.0015888964136869443
+            },
+            {
+                "q1": "If black holes pull in all matter due to a high gravitational pull, but light has no mass and also isn't considered matter, how can black holes exist?",
+                "q2": "What is tension and compression mean in bridges?",
+                "similarity": 0.0016118164749390027
+            },
+            {
+                "q1": "What is the ideal shuttle speed for filming at 25 fps? I try 1/50 but it wasn't really nice.",
+                "q2": "Which is better of Mi Max and Moto G4 Plus?",
+                "similarity": 0.001727474703838259
+            },
+            {
+                "q1": "Heard Mana Foliage is on the Backfoot? Did anyone have inputs on this Villa Project in Sarjapur Chandapura Road?",
+                "q2": "Which villa project in Chennai is good?",
+                "similarity": 0.0017298536380765852
+            },
+            {
+                "q1": "Do we have Financial Management in IPCC group 1 in may 2017? Websites show change in syllabus.",
+                "q2": "I am trying to become a math scholar. What books do you recommend?",
+                "similarity": 0.0017550875838641387
+            },
+            {
+                "q1": "How do I get MS office free for windows 10?",
+                "q2": "If God and a human possess copies of the same DVD, only the latter's being in cellophane, does God get jealous?",
+                "similarity": 0.0017610655539435822
+            },
+            {
+                "q1": "How did Jacoby Brisset get mentored by Bill Parcells since high school?",
+                "q2": "Are you satisfied with your sex life?",
+                "similarity": 0.0018720698633603397
+            },
+            {
+                "q1": "Did all Waffen SS commit crimes against humanity?",
+                "q2": "What is diagtrack what is diag track?",
+                "similarity": 0.0019184164900260424
+            },
+            {
+                "q1": "Can I delete music from my computer if backed up on an external drive & the original files in iCloud? Where do the iTunes library files reside?",
+                "q2": "How was your first trip on LSD?",
+                "similarity": 0.0019568355517860254
+            },
+            {
+                "q1": "Sap abap jobs in Hyderabad for freshers?",
+                "q2": "How can I upgrade my kitchenaid proline espresso machine's steam wand?",
+                "similarity": 0.002023109134848003
+            },
+            {
+                "q1": "Why current in capacitor leading?",
+                "q2": "Do you love your job as a programmer? Is every challenging thing enjoyable ? I'm a graphic designer and I love it. Will I love programming ?",
+                "similarity": 0.0020367966930446685
+            },
+            {
+                "q1": "At the age of 30 can a NGO help me, I am from middle class family?",
+                "q2": "What is the best way of getting good at answering logic questions?",
+                "similarity": 0.002213789579726991
+            },
+            {
+                "q1": "Why did Val Valentino give reveal the secrets of magicians?",
+                "q2": "Is Dynamo's (Steven Frayne) magic real?",
+                "similarity": 0.002289023657770258
+            },
+            {
+                "q1": "When does up govt. scholarship (b. Tech) come to students acc.?",
+                "q2": "Lisa how do you know which country I live in?",
+                "similarity": 0.0023955562770502873
+            }
+        ]
+    },
+    "2": {
+        "highest": [
+            {
+                "q1": "Which is the best platform for learning R language?",
+                "q2": "Which is the best platform to learn R language?",
+                "similarity": 0.8358315783666453
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at Xerox?",
+                "q2": "What are some things new employees should know going into their first day at Target?",
+                "similarity": 0.8389260973951265
+            },
+            {
+                "q1": "Is Google actually replacing Nexus with Pixel?",
+                "q2": "Why is Google replacing Nexus with Pixel?",
+                "similarity": 0.8497839423312684
+            },
+            {
+                "q1": "What is the best part of our life?",
+                "q2": "What is the best part of life?",
+                "similarity": 0.8643325375929335
+            },
+            {
+                "q1": "How do I improve my calculus skills?",
+                "q2": "How can I improve my calculus?",
+                "similarity": 0.8683192709117371
+            },
+            {
+                "q1": "What will happen if a country tried to invade/declared war on India?",
+                "q2": "What would happen if a country tried to invade/declared war on Switzerland?",
+                "similarity": 0.8792336939283971
+            },
+            {
+                "q1": "What are the best shared office space in Bangalore Indiranagar?",
+                "q2": "Where is the best shared office space in Bangalore Indiranagar?",
+                "similarity": 0.8850748636188932
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at Chart Industries?",
+                "q2": "What are some things new employees should know going into their first day at CSS Industries?",
+                "similarity": 0.8946347618246884
+            },
+            {
+                "q1": "Why does this \u201cCold War thinking\u201d still not obsolete?",
+                "q2": "Why does \u201cCold War thinking\u201d still not obsolete?",
+                "similarity": 0.8947674396465484
+            },
+            {
+                "q1": "Television Production: How does someone go about building up a network to get a job in LA/Hollywood?",
+                "q2": "Television Production: How does someone go about building up a network to get a job in LA?",
+                "similarity": 0.8953590910316006
+            },
+            {
+                "q1": "What are some tips on making it through the job interview process at Noble?",
+                "q2": "What are some tips on making it through the job interview process at Quantum?",
+                "similarity": 0.8976317173244561
+            },
+            {
+                "q1": "How much does it cost to build a ship?",
+                "q2": "How much does it cost to build a warehouse?",
+                "similarity": 0.9002698564557688
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at CMS Energy?",
+                "q2": "What are some things new employees should know going into their first day at Anatolia Energy?",
+                "similarity": 0.9029231812215553
+            },
+            {
+                "q1": "What is your review of Volkswagen Polo petrol?",
+                "q2": "What is your review of Volkswagen Polo?",
+                "similarity": 0.903519765914367
+            },
+            {
+                "q1": "What are the strongest majors in terms of job prospects and what are the weakest majors at Winthrop University?",
+                "q2": "What are the strongest majors in terms of job prospects and what are the weakest majors at Marshall University?",
+                "similarity": 0.9165280162645953
+            },
+            {
+                "q1": "What is the best advice you've ever been given?",
+                "q2": "What is the best advice you have ever been given?",
+                "similarity": 0.917606319835417
+            },
+            {
+                "q1": "Who is the biggest traitor in the history of Austria?",
+                "q2": "Who is the biggest traitor in the history of Poland?",
+                "similarity": 0.9213983045825267
+            },
+            {
+                "q1": "What are the different types of African drums?",
+                "q2": "How are the different types of African drums utilized?",
+                "similarity": 0.9312258135910068
+            },
+            {
+                "q1": "What is unusual or different about the food and cuisine in Mexico?",
+                "q2": "What is unusual or different about the food and cuisine in Israel?",
+                "similarity": 0.9345662977598849
+            },
+            {
+                "q1": "What are the pros and cons of becoming an angel investor?",
+                "q2": "What are pros and cons of becoming an angel investor?",
+                "similarity": 0.9393909355955544
+            }
+        ],
+        "lowest": [
+            {
+                "q1": "Can a target market evolve over time based on adding additional more robust features?",
+                "q2": "GAURAV GOEL SIR can u plz provide me notes for ies2017,I need to clear it in very first attempt.A little help from u will make my dream come true, plz?",
+                "similarity": 0.0008687219340656305
+            },
+            {
+                "q1": "Can I use two Jio sim on one dual sim phone?",
+                "q2": "Why in Naruto: Shippuden The Longest moment epsiode the chair Itachi was sitting on had one black dot on each side of his head?",
+                "similarity": 0.0012667054251743251
+            },
+            {
+                "q1": "Who was started Social Media war between Indian and Pakistani?",
+                "q2": "Which army special unit is much more experienced and well trained, the SSG(N) or the MARCOS?",
+                "similarity": 0.0016725219307315601
+            },
+            {
+                "q1": "If black holes pull in all matter due to a high gravitational pull, but light has no mass and also isn't considered matter, how can black holes exist?",
+                "q2": "What is tension and compression mean in bridges?",
+                "similarity": 0.0018565715201932975
+            },
+            {
+                "q1": "Why current in capacitor leading?",
+                "q2": "Do you love your job as a programmer? Is every challenging thing enjoyable ? I'm a graphic designer and I love it. Will I love programming ?",
+                "similarity": 0.0021809051627389507
+            },
+            {
+                "q1": "Did all Waffen SS commit crimes against humanity?",
+                "q2": "What is diagtrack what is diag track?",
+                "similarity": 0.0022531780819737553
+            },
+            {
+                "q1": "Sap abap jobs in Hyderabad for freshers?",
+                "q2": "How can I upgrade my kitchenaid proline espresso machine's steam wand?",
+                "similarity": 0.002268887396690617
+            },
+            {
+                "q1": "What pastries can you use for pies?",
+                "q2": "Is disqus comment in wordpress bad for SEO?",
+                "similarity": 0.002909931512723655
+            },
+            {
+                "q1": "What are the best activities to do with children when visiting Sangli, Maharashtra, India?",
+                "q2": "How can I avoid bad thoughts during work?",
+                "similarity": 0.0032572090193438057
+            },
+            {
+                "q1": "Which mobile phone should I buy - a Galaxy Note 5 or an S6 Edge Plus?",
+                "q2": "What are the signs of a chemical reaction and does the type of chemical used give a different sign?",
+                "similarity": 0.003286137699647458
+            },
+            {
+                "q1": "Web based reporting tool for MongoDB?",
+                "q2": "What would Hillary Clinton Have To Do To Serve Time?",
+                "similarity": 0.003451678729805538
+            },
+            {
+                "q1": "Will Theon meet the Starks again?",
+                "q2": "Are you going to push to improve the ACA?",
+                "similarity": 0.003472699695368977
+            },
+            {
+                "q1": "Filial piety and humaneness?",
+                "q2": "What kind of patients mostly die in a hospital?",
+                "similarity": 0.003647847462007492
+            },
+            {
+                "q1": "Can polar bears and penguins not adapt through natural selection to the warmer environments humans are creating for them?",
+                "q2": "In the game 'Magium text', can the last two achievements of the chapter 6 in book 1 be achieved?",
+                "similarity": 0.0038716399532072623
+            },
+            {
+                "q1": "Was Lord Melbourne ever considered an attractive gentleman?",
+                "q2": "How can I be, what I can describe?",
+                "similarity": 0.00391481826210402
+            },
+            {
+                "q1": "What is the ideal shuttle speed for filming at 25 fps? I try 1/50 but it wasn't really nice.",
+                "q2": "Which is better of Mi Max and Moto G4 Plus?",
+                "similarity": 0.004227753203066596
+            },
+            {
+                "q1": "Why do new investors open account with ICICI direct when they can save 90% with Fyers / Other discount brokers?",
+                "q2": "Would you buy a handbag online? If not, Why not?",
+                "similarity": 0.004802098069164504
+            },
+            {
+                "q1": "What is the procedure to join the Bomb Detection and Disposal Squad after metallurgy engineering?",
+                "q2": "Where can we get medical reports in Delhi?",
+                "similarity": 0.006488555773156935
+            },
+            {
+                "q1": "At the age of 30 can a NGO help me, I am from middle class family?",
+                "q2": "What is the best way of getting good at answering logic questions?",
+                "similarity": 0.007324880464340704
+            },
+            {
+                "q1": "Why did globalisation happen when it did?",
+                "q2": "What policies are adopted by Apple for music player and PC?",
+                "similarity": 0.007667089874804936
+            }
+        ]
+    },
+    "4": {
+        "highest": [
+            {
+                "q1": "What universities does Logmein recruit new grads from? What majors are they looking for?",
+                "q2": "What universities does Express recruit new grads from? What majors are they looking for?",
+                "similarity": 0.8380808513406507
+            },
+            {
+                "q1": "What will happen if a country tried to invade/declared war on India?",
+                "q2": "What would happen if a country tried to invade/declared war on Switzerland?",
+                "similarity": 0.8409692116217884
+            },
+            {
+                "q1": "What are the different types of African drums?",
+                "q2": "How are the different types of African drums utilized?",
+                "similarity": 0.8442683408723991
+            },
+            {
+                "q1": "How do I start an online advertising company?",
+                "q2": "How do I start an advertising company?",
+                "similarity": 0.8451737083736327
+            },
+            {
+                "q1": "What are the best small classes for freshmen at Southern Connecticut State?",
+                "q2": "What are the best small classes for freshmen at Western Connecticut State?",
+                "similarity": 0.8456423750681135
+            },
+            {
+                "q1": "Do you like Virat Kohli?",
+                "q2": "Why do you like Virat Kohli?",
+                "similarity": 0.84789059042709
+            },
+            {
+                "q1": "What is the best part of our life?",
+                "q2": "What is the best part of life?",
+                "similarity": 0.8572533138052497
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at Xerox?",
+                "q2": "What are some things new employees should know going into their first day at Target?",
+                "similarity": 0.8573692572316285
+            },
+            {
+                "q1": "What does the 10th Amendment of the U.S. Constitution mean?",
+                "q2": "What exactly does the 7th Amendment of the U.S. Constitution mean?",
+                "similarity": 0.8637080948044411
+            },
+            {
+                "q1": "How much does it cost to build a ship?",
+                "q2": "How much does it cost to build a warehouse?",
+                "similarity": 0.8774065331308423
+            },
+            {
+                "q1": "What is your review of Volkswagen Polo petrol?",
+                "q2": "What is your review of Volkswagen Polo?",
+                "similarity": 0.9064780548933478
+            },
+            {
+                "q1": "What are the strongest majors in terms of job prospects and what are the weakest majors at Winthrop University?",
+                "q2": "What are the strongest majors in terms of job prospects and what are the weakest majors at Marshall University?",
+                "similarity": 0.907513950805095
+            },
+            {
+                "q1": "What are some things new employees should know going into their first day at Chart Industries?",
+                "q2": "What are some things new employees should know going into their first day at CSS Industries?",
+                "similarity": 0.909861258191788
+            },
+            {
+                "q1": "Television Production: How does someone go about building up a network to get a job in LA/Hollywood?",
+                "q2": "Television Production: How does someone go about building up a network to get a job in LA?",
+                "similarity": 0.9124595503181835
+            },
+            {
+                "q1": "What are some tips on making it through the job interview process at Noble?",
+                "q2": "What are some tips on making it through the job interview process at Quantum?",
+                "similarity": 0.9319891990164373
+            },
+            {
+                "q1": "What is unusual or different about the food and cuisine in Mexico?",
+                "q2": "What is unusual or different about the food and cuisine in Israel?",
+                "similarity": 0.9357609980130868
+            },
+            {
+                "q1": "How one can make use of its brain to its maximum potential?",
+                "q2": "How one can make use of his brain to its maximum potential?",
+                "similarity": 0.9361835464183406
+            },
+            {
+                "q1": "Who is the biggest traitor in the history of Austria?",
+                "q2": "Who is the biggest traitor in the history of Poland?",
+                "similarity": 0.9403431192741258
+            },
+            {
+                "q1": "What are the pros and cons of becoming an angel investor?",
+                "q2": "What are pros and cons of becoming an angel investor?",
+                "similarity": 0.9453329904680184
+            },
+            {
+                "q1": "What is the best advice you've ever been given?",
+                "q2": "What is the best advice you have ever been given?",
+                "similarity": 0.9696564864724179
+            }
+        ],
+        "lowest": [
+            {
+                "q1": "Sap abap jobs in Hyderabad for freshers?",
+                "q2": "How can I upgrade my kitchenaid proline espresso machine's steam wand?",
+                "similarity": 0.004012881871871862
+            },
+            {
+                "q1": "Was Lord Melbourne ever considered an attractive gentleman?",
+                "q2": "How can I be, what I can describe?",
+                "similarity": 0.004386163376295571
+            },
+            {
+                "q1": "Web based reporting tool for MongoDB?",
+                "q2": "What would Hillary Clinton Have To Do To Serve Time?",
+                "similarity": 0.0045172333769901915
+            },
+            {
+                "q1": "Why current in capacitor leading?",
+                "q2": "Do you love your job as a programmer? Is every challenging thing enjoyable ? I'm a graphic designer and I love it. Will I love programming ?",
+                "similarity": 0.004641275270319897
+            },
+            {
+                "q1": "Why did globalisation happen when it did?",
+                "q2": "What policies are adopted by Apple for music player and PC?",
+                "similarity": 0.0053938071260867014
+            },
+            {
+                "q1": "Did all Waffen SS commit crimes against humanity?",
+                "q2": "What is diagtrack what is diag track?",
+                "similarity": 0.005750786328868284
+            },
+            {
+                "q1": "Who was started Social Media war between Indian and Pakistani?",
+                "q2": "Which army special unit is much more experienced and well trained, the SSG(N) or the MARCOS?",
+                "similarity": 0.006616652455161309
+            },
+            {
+                "q1": "Why do spicy foods make my jaw and neck hurt?",
+                "q2": "Windows 10 Customer support?",
+                "similarity": 0.007166404293333879
+            },
+            {
+                "q1": "When does up govt. scholarship (b. Tech) come to students acc.?",
+                "q2": "Lisa how do you know which country I live in?",
+                "similarity": 0.008707430532261409
+            },
+            {
+                "q1": "At the age of 30 can a NGO help me, I am from middle class family?",
+                "q2": "What is the best way of getting good at answering logic questions?",
+                "similarity": 0.009653702531420982
+            },
+            {
+                "q1": "Is Koena who can remember scraps of information about co-workers a Memory Girl or Attentive Watcher or Simply Mental Case?",
+                "q2": "Who would women rather be: an attractive girl who receives a lot of attention including the unwanted kind, or an average girl who doesn't get much attention?",
+                "similarity": 0.009731814627046856
+            },
+            {
+                "q1": "Filial piety and humaneness?",
+                "q2": "What kind of patients mostly die in a hospital?",
+                "similarity": 0.010798487507029412
+            },
+            {
+                "q1": "Can a target market evolve over time based on adding additional more robust features?",
+                "q2": "GAURAV GOEL SIR can u plz provide me notes for ies2017,I need to clear it in very first attempt.A little help from u will make my dream come true, plz?",
+                "similarity": 0.01104698472385658
+            },
+            {
+                "q1": "What is the procedure to join the Bomb Detection and Disposal Squad after metallurgy engineering?",
+                "q2": "Where can we get medical reports in Delhi?",
+                "similarity": 0.011329798100098138
+            },
+            {
+                "q1": "What pastries can you use for pies?",
+                "q2": "Is disqus comment in wordpress bad for SEO?",
+                "similarity": 0.011850050046250324
+            },
+            {
+                "q1": "Why do new investors open account with ICICI direct when they can save 90% with Fyers / Other discount brokers?",
+                "q2": "Would you buy a handbag online? If not, Why not?",
+                "similarity": 0.012944775481063136
+            },
+            {
+                "q1": "Do we have Financial Management in IPCC group 1 in may 2017? Websites show change in syllabus.",
+                "q2": "I am trying to become a math scholar. What books do you recommend?",
+                "similarity": 0.013308373844772028
+            },
+            {
+                "q1": "Which mobile phone should I buy - a Galaxy Note 5 or an S6 Edge Plus?",
+                "q2": "What are the signs of a chemical reaction and does the type of chemical used give a different sign?",
+                "similarity": 0.013938980907193366
+            },
+            {
+                "q1": "How do I get MS office free for windows 10?",
+                "q2": "If God and a human possess copies of the same DVD, only the latter's being in cellophane, does God get jealous?",
+                "similarity": 0.01580830270568064
+            },
+            {
+                "q1": "How did Jacoby Brisset get mentored by Bill Parcells since high school?",
+                "q2": "Are you satisfied with your sex life?",
+                "similarity": 0.016356679116812912
+            }
+        ]
+    }
+}

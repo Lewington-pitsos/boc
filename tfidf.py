@@ -20,7 +20,7 @@ os.environ['HF_TOKEN'] = creds['HF_TOKEN']
 
 # Load the data
 df = pd.read_csv('data/questions.csv')
-df = df.sample(frac=0.01, random_state=42).reset_index(drop=True)
+df = df.sample(frac=0.001, random_state=42).reset_index(drop=True)
 print(df.shape)
 print(df['is_duplicate'].value_counts())
 
@@ -92,11 +92,8 @@ doc_to_index = {doc: idx for idx, doc in enumerate(docs)}
 df['q1idx'] = df['question1'].map(doc_to_index)
 df['q2idx'] = df['question2'].map(doc_to_index)
 
-# Thresholds for evaluation
-thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.9]
-
 # Function to compute results
-def compute_results(df, concept_indices_list, num_concepts, thresholds):
+def compute_results(df, concept_indices_list, num_concepts):
     mapping = dict(zip(df['q1idx'], df['q2idx']))
     q1_indices = list(mapping.keys())
     q2_indices = [mapping[q1] for q1 in q1_indices]
@@ -122,28 +119,30 @@ def compute_results(df, concept_indices_list, num_concepts, thresholds):
 
     query_vectors = tfidf_matrix[q1_indices]
     n_queries = len(q1_indices)
-    results = []
 
-    for threshold in thresholds:
-        similarities = cosine_similarity(query_vectors, tfidf_matrix)
-        above_threshold = similarities > threshold
-        n_above_threshold = above_threshold.sum(axis=1)
-        correct_similarities = similarities[np.arange(n_queries), q2_indices]
-        correct_above_threshold = correct_similarities > threshold
-        with np.errstate(divide='ignore', invalid='ignore'):
-            score = np.divide(
-                correct_above_threshold.astype(float),
-                n_above_threshold,
-                where=n_above_threshold > 0
-            )
-            score[n_above_threshold == 0] = 0.0
-        avg_score = np.mean(score)
-        results.append(avg_score)
-    return results
+    similarities = cosine_similarity(query_vectors, tfidf_matrix)
+    correct_similarities = similarities[np.arange(n_queries), q2_indices]
+
+    per_query_data = []
+
+    for i in range(n_queries):
+        q1_idx = q1_indices[i]
+        q2_idx = q2_indices[i]
+        q1_text = docs[q1_idx]
+        q2_text = docs[q2_idx]
+        sim = correct_similarities[i]
+        per_query_data.append({
+            'q1': q1_text,
+            'q2': q2_text,
+            'similarity': sim
+        })
+
+    return per_query_data
 
 # Evaluate for different values of k
-ks = [None, 1, 2, 4]  # None for bag of words, 1 for bag of concepts
+ks = [None, 1, 2]  # None for bag of words, 1 for bag of concepts
 all_results = []
+all_per_query_data = {}
 
 for k in ks:
     if k is None:
@@ -160,39 +159,47 @@ for k in ks:
         q2_indices = [mapping[q1] for q1 in q1_indices]
         query_vectors = tfidf_matrix[q1_indices]
         n_queries = len(q1_indices)
-        results = []
-        for threshold in thresholds:
-            similarities = cosine_similarity(query_vectors, tfidf_matrix)
-            above_threshold = similarities > threshold
-            n_above_threshold = above_threshold.sum(axis=1)
-            correct_similarities = similarities[np.arange(n_queries), q2_indices]
-            correct_above_threshold = correct_similarities > threshold
-            with np.errstate(divide='ignore', invalid='ignore'):
-                score = np.divide(
-                    correct_above_threshold.astype(float),
-                    n_above_threshold,
-                    where=n_above_threshold > 0
-                )
-                score[n_above_threshold == 0] = 0.0
-            avg_score = np.mean(score)
-            results.append(avg_score)
-        all_results.append(results)
+        similarities = cosine_similarity(query_vectors, tfidf_matrix)
+        correct_similarities = similarities[np.arange(n_queries), q2_indices]
+        per_query_data = []
+        for i in range(n_queries):
+            q1_idx = q1_indices[i]
+            q2_idx = q2_indices[i]
+            q1_text = docs[q1_idx]
+            q2_text = docs[q2_idx]
+            sim = correct_similarities[i]
+            per_query_data.append({
+                'q1': q1_text,
+                'q2': q2_text,
+                'similarity': sim
+            })
+        all_per_query_data['None'] = per_query_data
     else:
         # Process documents to get concept indices
         concept_indices_list = process_documents_to_concept_indices(
             docs, model, sae, batch_size=64, k=k, device=device
         )
         num_concepts = sae.cfg.d_sae
-        results = compute_results(df, concept_indices_list, num_concepts, thresholds)
-        all_results.append(results)
+        per_query_data = compute_results(df, concept_indices_list, num_concepts)
+        all_per_query_data[k] = per_query_data
 
-# Plot the results
-for idx, results in enumerate(all_results):
-    k_value = 'Bag of Words' if ks[idx] is None else f'Bag of Concepts (k={ks[idx]})'
-    plt.plot(thresholds, results, marker='o', label=k_value)
+# Store highest and lowest scoring question pairs for each k
+results_dict = {}
 
-plt.xlabel('Threshold')
-plt.ylabel('Average Score')
-plt.title('Average Score vs Threshold')
-plt.legend()
-plt.savefig('tfidf.png')
+for k in ks:
+    key = 'None' if k is None else k
+    per_query_data = all_per_query_data[key]
+    sorted_data = sorted(per_query_data, key=lambda x: x['similarity'])
+    lowest = sorted_data[:20]
+    highest = sorted_data[-20:]
+    results_dict[key] = {
+        'highest': highest,
+        'lowest': lowest
+    }
+
+# Optionally, save the results_dict to a JSON file
+with open('results.json', 'w') as f:
+    json.dump(results_dict, f, indent=4)
+
+# Plot the results (if you still want to plot average scores)
+# Note: Since we modified the compute_results function, you may need to adjust the plotting code accordingly.
