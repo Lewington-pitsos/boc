@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_key_pair" "boc_deployer" {
-  key_name   = "my-ssh-key"
+  key_name   = "boc_deployer"
   public_key = file("~/.ssh/id_sache.pub") # NOTE: Change this to your public key path
 }
 
-resource "aws_security_group" "allow_ssh" {
+resource "aws_security_group" "boc_allow_ssh" {
   name        = "boc_allow_ssh"
   description = "Allow SSH inbound traffic"
 
@@ -29,9 +29,9 @@ resource "aws_security_group" "allow_ssh" {
 resource "aws_instance" "boc" {
   ami           = "ami-0197c13a4f68c9360"
   instance_type = var.instance_type
-  key_name      = aws_key_pair.deployer.key_name
+  key_name      = aws_key_pair.boc_deployer.key_name
 
-  security_groups = [aws_security_group.allow_ssh.name]
+  security_groups = [aws_security_group.boc_allow_ssh.name]
 
   tags = {
     Name = "boc"
