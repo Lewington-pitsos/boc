@@ -1,0 +1,206 @@
+{
+    "top_10_queries": [
+        {
+            "query_id": "1",
+            "query_text": "what similarity laws must be obeyed when constructing aeroelastic models\nof heated high speed aircraft .",
+            "top_doc_id": "13",
+            "top_doc_text": "similarity laws for stressing heated wings . tsien,h.s. j. ae. scs. 20, 1953, 1. similarity laws for stressing heated wings .\n  it will be shown that the differential equations for a heated\nplate with large temperature gradient and for a similar plate at\nconstant temperature can be made the same by a proper\nmodification of the thickness and the loading for the isothermal plate .\nthis fact leads to the result that the stresses in the heated plate\ncan be calculated from measured strains on the unh...",
+            "precision_at_1": 1.0,
+            "precision_at_3": 1.0,
+            "precision_at_5": 0.8,
+            "precision_at_10": 0.5
+        },
+        {
+            "query_id": "2",
+            "query_text": "what are the structural and aeroelastic problems associated with flight\nof high speed aircraft .",
+            "top_doc_id": "12",
+            "top_doc_text": "some structural and aerelastic considerations of high\nspeed flight . bisplinghoff,r.l. j. ae. scs. 23, 1956, 289. some structural and aerelastic considerations of high\nspeed flight .\n  the dominating factors in structural design of high-speed\naircraft are thermal and aeroelastic in origin .  the subject\nmatter is concerned largely with a discussion of these factors and\ntheir interrelation with one another .  a summary is presented\nof some of the analytical and experimental tools available to\naer...",
+            "precision_at_1": 1.0,
+            "precision_at_3": 1.0,
+            "precision_at_5": 0.6,
+            "precision_at_10": 0.4
+        },
+        {
+            "query_id": "212",
+            "query_text": "what dome contours minimize discontinuity stresses when used as closures\non cylindrical pressure vessels .",
+            "top_doc_id": "954",
+            "top_doc_text": "analysis of stress at several junctions in pressurized\nshells . johns,r.h., morgan,w.c. and spera,d.a. aiaa jnl. 1, 1963, 455. analysis of stress at several junctions in pressurized\nshells .\n  theoretical and experimental results are\npresented for the discontinuity stresses arising at a\nchange of wall thickness in a cylinder, a\ncylinder-hemisphere junction, and a cone-spherical torus\njunction in pressure vessels .  the effect of mismatch\nof nonconcurrence of the middle surfaces of two\njoined cyl...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.4,
+            "precision_at_10": 0.4
+        },
+        {
+            "query_id": "97",
+            "query_text": "to what extent can readily available steady-state aerodynamic data be\nutilized to predict lifting-surface flutter characteristics .",
+            "top_doc_id": "753",
+            "top_doc_text": "development of a quasi-steady approach to flutter and\ncorrelation with kernel-function results . gravitz,s.i., laidlaw,w.r., bryce,w.w. and cooper,r.e. j.ae.scs. 29, 1962, 445. development of a quasi-steady approach to flutter and\ncorrelation with kernel-function results .\n  the quasi-steady approach to flutter utilizes experimental or\ntheoretical steady-state aerodynamic data to arrive at increased\nunderstanding of the flutter mechanism, and also, in many cases,\nacceptably accurate quantitative...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.2,
+            "precision_at_10": 0.1
+        },
+        {
+            "query_id": "83",
+            "query_text": "what controls leading-edge attachment at transonic speeds .",
+            "top_doc_id": "526",
+            "top_doc_text": "leading edge attachment in transonic flow with laminar\nor turbulent boundary layers . mabey,d.g. j. ae. scs. 29, 1962. leading edge attachment in transonic flow with laminar\nor turbulent boundary layers .\n  the transonic flow round a two-dimensional airfoil at\nincidence is often determined by the type of flow in the leading-edge\nregion .  if the flow separates at the leading edge at low speeds it\nis liable to attach as the speed increases, often quite suddenly .\na review of this change with lami...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.2,
+            "precision_at_10": 0.1
+        },
+        {
+            "query_id": "213",
+            "query_text": "what general solutions for the stresses in pressurized shells of\nrevolution are available .",
+            "top_doc_id": "954",
+            "top_doc_text": "analysis of stress at several junctions in pressurized\nshells . johns,r.h., morgan,w.c. and spera,d.a. aiaa jnl. 1, 1963, 455. analysis of stress at several junctions in pressurized\nshells .\n  theoretical and experimental results are\npresented for the discontinuity stresses arising at a\nchange of wall thickness in a cylinder, a\ncylinder-hemisphere junction, and a cone-spherical torus\njunction in pressure vessels .  the effect of mismatch\nof nonconcurrence of the middle surfaces of two\njoined cyl...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.3333333333333333,
+            "precision_at_5": 0.2,
+            "precision_at_10": 0.2
+        },
+        {
+            "query_id": "175",
+            "query_text": "are previous analyses of circumferential thermal buckling of circular\ncylindrical shells unnecessarily involved or even inaccurate due to the\nassumed forms of buckling mode .",
+            "top_doc_id": "887",
+            "top_doc_text": "buckling due to thermal stress of cylindrical shells\nsubjected to axial temperature distributions . johns,d.j. coa r.147, 1961. buckling due to thermal stress of cylindrical shells\nsubjected to axial temperature distributions .\n  thermal stress distributions in uniform circular cylindrical shells\ndue to axial temperature distributions are investigated .  the\ndiscontinuity effect due to the presence of a cooler stiffening bulkhead is\nconsidered, and the possibility of thermal buckling of the shel...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "176",
+            "query_text": "what papers are there dealing with circumferential buckling either\nthermal buckling or due to mechanical loading .",
+            "top_doc_id": "1146",
+            "top_doc_text": "thermal buckling of cylinders . melvin s. anderson nasa langley research center thermal buckling of cylinders .\nseveral theoretical and experimental investigations on the buckling\nof cylinders due to both axial and circumferential thermal stresses are\nreviewed .  differences that exist among the various results are\ndiscussed and areas of future work are indicated .",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "218",
+            "query_text": "papers on small deflection theory for buckling of sandwich cylinders .",
+            "top_doc_id": "1048",
+            "top_doc_text": "a small deflection theory for curved sandwich plates . stein,m. and mayers,j. naca r.1008, 1951. a small deflection theory for curved sandwich plates .\n  a small-deflection theory that takes into account deformations\ndue to transverse shear is presented for the elastic-behavior\nanalysis of orthotropic plates of constant cylindrical curvature\nwith considerations of buckling included .  the theory is\napplicable primarily to sandwich construction .",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "219",
+            "query_text": "has anyone developed an analysis which accurately establishes the large\ndeflection behaviour of conical shells .",
+            "top_doc_id": "930",
+            "top_doc_text": "general theory of large deflections of thin shells\nwith special applications to conical shells . dill,e.h. nasa tn.d826, 1961. general theory of large deflections of thin shells\nwith special applications to conical shells .\n  a general theory is developed for the case of large deflections\nbut with rotations of the elements negligible compared to unity .  the\nderivation is carried out in tensor form and therefore any coordinate\nsystem on the surface of the shell can be used .  the effect of initi...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        }
+    ],
+    "bottom_10_queries": [
+        {
+            "query_id": "118",
+            "query_text": "do the discrepancies among current analyses of the vorticity effect\non stagnation-point heat transfer result primarily from the\ndifferences in the viscosity-temperature law assumed .",
+            "top_doc_id": "324",
+            "top_doc_text": "vorticity effect on the stagnation point flow of a viscous\nincompressible fluid . rott, n. and lenard, m. j. aero. sc. v. 26, august, 1959 . vorticity effect on the stagnation point flow of a viscous\nincompressible fluid .\nthe effect of vorticity on axisymmetric stagnation point boundary layer\ncalculations is investigated by calculating a perturbation to the\nstagnation point flow . the shear caused by the vorticity effect is\nfound to be surprisingly large,.the slope of the shear curve /at zero\nv...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "119",
+            "query_text": "how far can one trust the linear viscosity-temperature solution\nassumed in some of the analyses of hypersonic shock layer at low\nreynolds number .",
+            "top_doc_id": "667",
+            "top_doc_text": "hypersonic shock layer theory of the stagnation region at low reynolds\nnumber . cheng, h.k. proc. 1961, heat transfer and fluid mech. inst. stanford. univ. press.\n1961 . p.161 hypersonic shock layer theory of the stagnation region at low reynolds\nnumber .\ncheng, h.k.\nhypersonic flow at low reynolds number is studied utilizing the\nshock-layer concept . the present formulation takes into account the salient\nfeatures of the transport processes within the shock layer in a manner\nconsistent with the ...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "120",
+            "query_text": "how close is the comparison of the shock layer theory with existing\nexperiments in the low reynolds number (merged-layer) regime .",
+            "top_doc_id": "329",
+            "top_doc_text": "various aerodynamic characteristics in hypersonic rarefied\ngas flow . probstein,r.f. and kemp,n.h. j. ae. scs. 27, 1960. various aerodynamic characteristics in hypersonic rarefied\ngas flow .\n  this paper considers the problem of calculating viscous\naerodynamic characteristics of blunt bodies at hypersonic speeds and\nat sufficiently high altitudes where the appropriate mean free\npath becomes too large for the use of familiar boundary-layer\ntheory but not so large that free molecule concepts apply...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "121",
+            "query_text": "has anyone explained the kink in the surge line of a multi-stage\naxial compressor .",
+            "top_doc_id": "589",
+            "top_doc_text": "some stall and surge phenomena in axial flow compressors . some stall and surge phenomena in axial flow compressors .\nobservations of rotating stall have shown that a wide variety\nof stall patterns is possible .\n     hot-wire anemometer data on a multistage compressor have\nshown a progressive-type stall at low speeds . the amplitude\nof the flow fluctuations increases in magnitude through the first\nfew stages and then diminishes rapidly to a small value in the\nlatter stages . a stage-stacking ana...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "122",
+            "query_text": "have any aerodynamic derivatives been measured at hypersonic mach\nnumbers and comparison been made with theoretical work .",
+            "top_doc_id": "748",
+            "top_doc_text": "subsonic aerodynamic flutter derivatives for wings and control surfaces,\n /compressible and incompressible flow/ . minhinnick, i. t. r.a.e. rep. structs. 87. july 1950 . subsonic aerodynamic flutter derivatives for wings and control surfaces,\n /compressible and incompressible flow/ .\nthis report gives tables of the two-dimensional subsonic flutter\nderivatives,. where possible the values given are based on the published\n work of various authors, but some have been specially calculated for\nthis re...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "123",
+            "query_text": "are methods of measuring aerodynamic derivatives available which\ncould be adopted for use in short running time facilities .",
+            "top_doc_id": "790",
+            "top_doc_text": "a wind-tunnel test technique for measuring the dynamic rotary\nstability derivatives at subsonic and supersonic speeds . report 1258 benjamin h. beam a wind-tunnel test technique for measuring the dynamic rotary\nstability derivatives at subsonic and supersonic speeds .\na method is described for measuring the dynamic stability derivatives\nof a model airplane in a wind tunnel .  the characteristic features\nof this system are that single-degree-of-freedom oscillations were\nused to obtain combination...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "126",
+            "query_text": "what are wind-tunnel corrections for a two-dimensional aerofoil\nmounted off-centre in a tunnel .",
+            "top_doc_id": "714",
+            "top_doc_text": "blockage corrections for three-dimensional flow closed\nthroat wind tunnels, with considerations of the effect\nof compressibility . herriot,j.g. naca r.995, 1950. blockage corrections for three-dimensional flow closed\nthroat wind tunnels, with considerations of the effect\nof compressibility .\n  theoretical blockage corrections are presented for a body of\nrevolution and for a three-dimensional unswept wing in a\ncircular or rectangular wind tunnel .  the theory takes account of\nthe effects of the w...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "128",
+            "query_text": "how do kuchemann's and multhopp's methods for calculating lift\ndistributions on swept wings in subsonic flow compare with each other and with\nexperiment .",
+            "top_doc_id": "678",
+            "top_doc_text": "the effect of end plates on swept wings . kuchemann,d. and kettle,d.j. rae r.aero.2429, 1952. the effect of end plates on swept wings .\n  existing methods of calculating\nthe effect of endplates on straight\nwings are modified so as to apply to\nswept wings .  the changes in overall\nlift and drag, and also the spanwise\ndistribution of the additional load,\ncan be calculated .\n  the theoretical results are\ncompared with experimental results\nobtained on swept wings, including\nnew measurements of lift,...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "130",
+            "query_text": "what is the present state of the theory of quasi-conical flows .",
+            "top_doc_id": "633",
+            "top_doc_text": "an extension of the method of generalised conical flows\nfor lifting wings in supersonic flow . portnoy,h. rae tn. aero.2849, 1962. an extension of the method of generalised conical flows\nfor lifting wings in supersonic flow .\n  the method of generalised conical\nflows has previously been developed\nsubject to the condition that the\nupwash divided by the streamwise\nco-ordinate to the power k, where\nk is the order of the conical flow, must\nhave vanishing (k+1)th derivative\nwith respect to the conica...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        },
+        {
+            "query_id": "365",
+            "query_text": "what design factors can be used to control lift-drag ratios at mach\nnumbers above 5 .",
+            "top_doc_id": "1188",
+            "top_doc_text": "factors affecting lift-drag ratios at mach numbers\nfrom 5 to 20 . goebel,t.p. martin,j.j. and boyd,j.a. aiaa jnl. 1963, 640. factors affecting lift-drag ratios at mach numbers\nfrom 5 to 20 .\n  yawed-cone working charts and an engineering\nmethod are presented and used to calculate\nlift-drag ratios of flat-top conical wing-body\narrangements at mach numbers from 5 to 20 .\nviscous interaction effects are considered, but\nbluntness effects are neglected .  correlations\nof wind-tunnel data in the range...",
+            "precision_at_1": 0.0,
+            "precision_at_3": 0.0,
+            "precision_at_5": 0.0,
+            "precision_at_10": 0.0
+        }
+    ]
+}
