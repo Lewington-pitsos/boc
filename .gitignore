@@ -4,3 +4,4 @@ pad.ipynb
 data
 
 **/.terraform*
+*.pt
