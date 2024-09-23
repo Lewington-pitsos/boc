@@ -1,7 +1,11 @@
 pad.py
 pad.ipynb
 
+
 **/.terraform*
+**/*.tfstate
+**/*.tfstate.backup
+
 *.pt
 
 cruft
