@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import os
 import time
 import torch
@@ -12,18 +13,42 @@ from scipy.sparse import csr_matrix
 import xml.etree.ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Set up device
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# Load credentials
 with open('.credentials.json') as f:
     creds = json.load(f)
 os.environ['HF_TOKEN'] = creds['HF_TOKEN']
 
 # Load the model and SAE
-sae_id = "blocks.8.hook_resid_pre"
-release = "gpt2-small-res-jb"
-model_name = "gpt2"
+# sae_id = "blocks.8.hook_resid_pre"
+# release = "gpt2-small-res-jb"
+# model_name = "gpt2"
+# layer = 9
+
+# sae_id = "blocks.12.hook_resid_post"
+# release = "gemma-2b-res-jb"
+# model_name = 'gemma-2b'
+# layer = 13
+
+# release = 'gemma-scope-2b-pt-res'
+# sae_id = 'layer_19/width_1m/average_l0_16'
+# model_name = 'gemma-2b'
+# layer = 20
+
+
+release = 'gemma-scope-2b-pt-res'
+sae_id = 'layer_19/width_65k/average_l0_21'
+model_name = 'gemma-2-2b'
+layer = 20
+
+
+# release = 'gemma-scope-2b-pt-res'
+# sae_id = 'layer_19/width_16k/average_l0_23'
+# model_name = 'gemma-2-2b'
+# layer = 20
+
+batch_size = 8
+
 
 model = HookedTransformer.from_pretrained(model_name, device=device)
 
@@ -33,7 +58,6 @@ sae, cfg_dict, sparsity = SAE.from_pretrained(
     device=device
 )
 
-# Function to generate concept indices per document
 def generate_concept_indices(feature_acts, attention_mask, k=5):
     topk = torch.topk(feature_acts, k=k, dim=-1)  # [batch_size, seq_len, k]
 
@@ -55,7 +79,7 @@ def generate_concept_indices(feature_acts, attention_mask, k=5):
     return concepts_list
 
 # Process documents and generate concept indices
-def process_documents_to_concept_indices(texts, model, sae, batch_size=8, k=5, device='cuda'):
+def process_documents_to_concept_indices(texts, model, sae, layer, batch_size=8, k=5, device='cuda'):
     concept_indices_list = []
     tokenizer = model.tokenizer
 
@@ -68,13 +92,13 @@ def process_documents_to_concept_indices(texts, model, sae, batch_size=8, k=5, d
                 return_tensors='pt',
                 padding='max_length',
                 truncation=True,
-                max_length=512  # Adjust max_length for longer documents
+                max_length=90  # Adjust max_length for longer documents
             ).to(device)
             _, cache = model.run_with_cache(
                 inputs.input_ids,
                 attention_mask=inputs.attention_mask,
                 prepend_bos=True,
-                stop_at_layer=9
+                stop_at_layer=layer
             )
             feature_acts = sae.encode(cache[sae.cfg.hook_name])
             batch_concept_indices = generate_concept_indices(
@@ -124,8 +148,10 @@ def load_qrels(file_path):
 if __name__ == '__main__':
     if not os.path.exists('cruft'):
         os.makedirs('cruft')
+    for file in os.listdir('cruft'):
+        os.remove(os.path.join('cruft', file))
 
-    parent_dir = 'data/figures/'
+    parent_dir = 'data/movies/'
     docs_df = load_documents(parent_dir + 'all.xml')
     queries_df = load_queries(parent_dir + 'qry.xml')
     qrels = load_qrels(parent_dir + 'trec.txt')
@@ -142,10 +168,9 @@ if __name__ == '__main__':
     queries_df['index'] = queries_df.index
 
     # Process documents and queries to get concept indices
-    k_values = [None, 8, 4, 2, 1]  # None for bag of words, others for bag of concepts
+    k_values = [32, 16, 8, 4, 2, 1, None]  # None for bag of words, others for bag of concepts
     results = {}
 
-    batch_size = 32
 
     for k in k_values:
         if k is None:
@@ -159,12 +184,12 @@ if __name__ == '__main__':
                 print(f"Processing documents with k={k}")
                 # Process documents
                 doc_concept_indices_list = process_documents_to_concept_indices(
-                    doc_texts, model, sae, batch_size=batch_size, k=k, device=device
+                    doc_texts, model, sae, layer, batch_size=batch_size, k=k, device=device
                 )
                 # Process queries
                 print(f"Processing queries with k={k}")
                 query_concept_indices_list = process_documents_to_concept_indices(
-                    query_texts, model, sae, batch_size=batch_size, k=k, device=device
+                    query_texts, model, sae, layer, batch_size=batch_size, k=k, device=device
                 )
                 num_concepts = sae.cfg.d_sae
 
@@ -237,20 +262,25 @@ if __name__ == '__main__':
                 precision_at_k = sum(retrieved_relevancies) / n_eval
                 precisions[f'precision_at_{n_eval}'] = precision_at_k
             # Get top-ranked document
-            top_doc_id = ranked_doc_ids[0]
+            top_doc_id = ranked_doc_ids[:10]
             # Find the index of the top document
-            top_doc_idx = docs_df[docs_df['docno'] == top_doc_id].index[0]
-            top_doc_text = docs_df.loc[top_doc_idx, 'text']
-            # Optional: Limit the length of the document text for readability
-            max_text_length = 500  # Adjust as needed
-            if len(top_doc_text) > max_text_length:
-                top_doc_text = top_doc_text[:max_text_length] + '...'
-            # Store results
+            top_doc_ids = []
+            top_doc_texts = []
+
+            for doc_id in top_doc_id:
+                top_doc_idx = docs_df[docs_df['docno'] == doc_id].index[0]
+                top_doc_text = docs_df.loc[top_doc_idx, 'text']
+                max_text_length = 500  # Adjust as needed
+                if len(top_doc_text) > max_text_length:
+                    top_doc_text = top_doc_text[:max_text_length] + '...'
+                top_doc_ids.append(top_doc_idx)
+                top_doc_texts.append(top_doc_text)
+            
             result = {
                 'query_id': query_id,
                 'query_text': query_text,
-                'top_doc_id': top_doc_id,
-                'top_doc_text': top_doc_text
+                'top_doc_id': " ".join([str(q) for q in top_doc_ids]),
+                'top_doc_text': "|".join(top_doc_texts)
             }
             result.update(precisions)
             all_results.append(result)
@@ -303,3 +333,9 @@ if __name__ == '__main__':
 
     # Save comparison to JSON
     comparison_df.to_json('cruft/fig_average_precisions_comparison.json', orient='index', indent=4)
+    
+
+
+
+
+

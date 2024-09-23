@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<collection>
+  <doc>
+    <docno>1</docno>
+    <title>The Godfather</title>
+    <genre>Crime</genre>
+    <text>This classic film tells the story of the powerful Corleone crime family of New York, focusing on the transformation of Michael Corleone from reluctant outsider to ruthless mafia boss.</text>
+  </doc>
+  <doc>
+    <docno>2</docno>
+    <title>Heat</title>
+    <genre>Crime</genre>
+    <text>A professional thief and a seasoned cop are pitted against each other in a high-stakes game of cat and mouse, set against the backdrop of Los Angeles.</text>
+  </doc>
+  <doc>
+    <docno>3</docno>
+    <title>No Country for Old Men</title>
+    <genre>Crime</genre>
+    <text>After stumbling upon the aftermath of a drug deal gone wrong, a hunter finds a briefcase full of money, which triggers a violent cat-and-mouse chase across Texas by a relentless hitman.</text>
+  </doc>
+  <doc>
+    <docno>4</docno>
+    <title>Zodiac</title>
+    <genre>Crime</genre>
+    <text>Based on true events, this film follows a cartoonist at the San Francisco Chronicle who becomes obsessed with tracking down the Zodiac Killer, a serial murderer who taunted police with cryptic messages.</text>
+  </doc>
+  <doc>
+    <docno>5</docno>
+    <title>Pulp Fiction</title>
+    <genre>Crime</genre>
+    <text>Interweaving multiple storylines involving Los Angeles mobsters, fringe players, and a mysterious briefcase, the film is known for its eclectic dialogue and ironic mix of humor and violence.</text>
+  </doc>
+  <doc>
+    <docno>6</docno>
+    <title>American Gangster</title>
+    <genre>Crime</genre>
+    <text>This film chronicles the life of Harlem drug kingpin Frank Lucas and his rise to power, smuggling heroin into the country by hiding it in the coffins of American soldiers returning from the Vietnam War.</text>
+  </doc>
+  <doc>
+    <docno>7</docno>
+    <title>The Departed</title>
+    <genre>Crime</genre>
+    <text>Set in Boston, this movie features an undercover cop and a mole within the police force trying to identify each other while infiltrating an Irish gang.</text>
+  </doc>
+  <doc>
+    <docno>8</docno>
+    <title>Se7en</title>
+    <genre>Crime</genre>
+    <text>Two detectives, one new to the city and the other about to retire, are tasked with apprehending a serial killer who uses the seven deadly sins as his motives.</text>
+  </doc>
+  <doc>
+    <docno>9</docno>
+    <title>L.A. Confidential</title>
+    <genre>Crime</genre>
+    <text>In 1950s Los Angeles, three policemen—one strait-laced, one brutal, and one sleazy—investigate a series of murders with their own brand of justice.</text>
+  </doc>
+  <doc>
+    <docno>10</docno>
+    <title>Gone Girl</title>
+    <genre>Crime</genre>
+    <text>When his wife goes missing under mysterious circumstances, a man becomes the focus of an intense media circus, which soon spirals into a series of revelations and disturbing discoveries.</text>
+  </doc>
+  <doc>
+    <docno>11</docno>
+    <title>Braveheart</title>
+    <genre>Historical</genre>
+    <text>This film tells the story of William Wallace, a 13th-century Scottish warrior who led the Scots in the First War of Scottish Independence against King Edward I of England.</text>
+  </doc>
+  <doc>
+    <docno>12</docno>
+    <title>Schindler's List</title>
+    <genre>Historical</genre>
+    <text>Based on true events, this movie recounts the story of Oskar Schindler, a German industrialist who saved over a thousand Polish-Jewish refugees during the Holocaust by employing them in his factories.</text>
+  </doc>
+  <doc>
+    <docno>13</docno>
+    <title>Gladiator</title>
+    <genre>Historical</genre>
+    <text>Set in Roman times, this film follows Maximus Decimus Meridius, a powerful Roman general betrayed and reduced to slavery who seeks revenge against the corrupt emperor who murdered his family and sent him into exile.</text>
+  </doc>
+  <doc>
+    <docno>14</docno>
+    <title>Lincoln</title>
+    <genre>Historical</genre>
+    <text>This biographical drama focuses on the final months of President Abraham Lincoln's life, including his efforts to pass the Thirteenth Amendment to the United States Constitution, which would permanently abolish slavery.</text>
+  </doc>
+  <doc>
+    <docno>15</docno>
+    <title>Amadeus</title>
+    <genre>Historical</genre>
+    <text>The story is a fictionalized biography of Wolfgang Amadeus Mozart, told through the eyes of Antonio Salieri, his secret rival and the court composer for the Emperor of Austria.</text>
+  </doc>
+  <doc>
+    <docno>16</docno>
+    <title>The Last Emperor</title>
+    <genre>Historical</genre>
+    <text>This movie is a biographical account of Pu Yi, the last Emperor of China, following his tumultuous reign which began when he was only three years old.</text>
+  </doc>
+  <doc>
+    <docno>17</docno>
+    <title>A Beautiful Mind</title>
+    <genre>Historical</genre>
+    <text>Based on the life of John Nash, a Nobel Laureate in Economics, this film depicts his early academic career at Princeton, his struggle with schizophrenia, and how his condition affects his relationships with his wife and colleagues.</text>
+  </doc>
+  <doc>
+    <docno>18</docno>
+    <title>Troy</title>
+    <genre>Historical</genre>
+    <text>Inspired by Homer’s "The Iliad", this film dramatizes the decade-long Trojan War, sparked by the elopement of Helen, wife of a Greek king, with Paris, the prince of Troy.</text>
+  </doc>
+  <doc>
+    <docno>19</docno>
+    <title>The King's Speech</title>
+    <genre>Historical</genre>
+    <text>The film tells the story of King George VI of Britain, his impromptu ascension to the throne, and the speech therapist who helped the unsure monarch overcome his stammer.</text>
+  </doc>
+  <doc>
+    <docno>20</docno>
+    <title>Hotel Rwanda</title>
+    <genre>Historical</genre>
+    <text>This powerful film recounts the true-life story of Paul Rusesabagina, a hotel manager in Rwanda who housed over a thousand Tutsi refugees during their struggle against the Hutu militia during the Rwandan genocide.</text>
+  </doc>
+</collection>
