@@ -35,14 +35,22 @@ sae, cfg_dict, sparsity = SAE.from_pretrained(
 
 # Function to generate concept indices per document
 def generate_concept_indices(feature_acts, attention_mask, k=5):
-    topk_indices = torch.topk(feature_acts, k=k, dim=-1).indices  # [batch_size, seq_len, k]
+    topk = torch.topk(feature_acts, k=k, dim=-1)  # [batch_size, seq_len, k]
+
+    topk_indices = topk.indices
+
     attention_mask = attention_mask.bool()  # [batch_size, seq_len]
     batch_size, seq_len, k = topk_indices.shape
     concepts_list = []
     for i in range(batch_size):
         valid_positions = attention_mask[i].nonzero(as_tuple=False).squeeze()
-        valid_topk = topk_indices[i][valid_positions]  # [valid_seq_len, k]
-        concepts = valid_topk.flatten().cpu().numpy()
+        valid_topk_indices = topk_indices[i][valid_positions]  # [valid_seq_len, k]
+        valid_topk_values = topk.values[i][valid_positions]  # [valid_seq_len, k]
+
+        # Filter indices where the corresponding value is >= 0
+        valid_indices = valid_topk_indices[valid_topk_values >= 0]
+
+        concepts = valid_indices.flatten().cpu().numpy()
         concepts_list.append(concepts)
     return concepts_list
 
@@ -134,7 +142,7 @@ if __name__ == '__main__':
     queries_df['index'] = queries_df.index
 
     # Process documents and queries to get concept indices
-    k_values = [None, 1, 2, 4, 8]  # None for bag of words, others for bag of concepts
+    k_values = [None, 8, 4, 2, 1]  # None for bag of words, others for bag of concepts
     results = {}
 
     batch_size = 32
