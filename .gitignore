@@ -6,6 +6,8 @@ pad.ipynb
 **/*.tfstate
 **/*.tfstate.backup
 
+
+.credentials.json
 *.pt
 
 cruft
