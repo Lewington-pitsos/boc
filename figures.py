@@ -83,14 +83,12 @@ def process_documents_to_concept_indices(texts, model, sae, batch_size=8, k=5, d
 def load_documents(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         xml_data = f.read()
-    # Wrap the xml data with a root element
-    xml_data = '<root>' + xml_data + '</root>'
     root = ET.fromstring(xml_data)
     docs = []
     for doc in root.findall('doc'):
         docno = doc.find('docno').text.strip()
-        text_elements = [elem.text.strip() for elem in doc if elem.tag != 'docno' and elem.text]
-        text = ' '.join(text_elements)
+
+        text = doc.find('text').text.strip()
         docs.append({'docno': docno, 'text': text})
     return pd.DataFrame(docs)
 
@@ -116,10 +114,13 @@ def load_qrels(file_path):
     return qrels
 
 if __name__ == '__main__':
-    parent_dir = 'data/cranfield/'
-    docs_df = load_documents(parent_dir + 'cran.all.1400.xml')
-    queries_df = load_queries(parent_dir + 'cran.qry.xml')
-    qrels = load_qrels(parent_dir + 'cranqrel.trec.txt')
+    if not os.path.exists('cruft'):
+        os.makedirs('cruft')
+
+    parent_dir = 'data/figures/'
+    docs_df = load_documents(parent_dir + 'all.xml')
+    queries_df = load_queries(parent_dir + 'qry.xml')
+    qrels = load_qrels(parent_dir + 'trec.txt')
 
     # Prepare documents and queries
     doc_texts = docs_df['text'].tolist()
@@ -133,7 +134,7 @@ if __name__ == '__main__':
     queries_df['index'] = queries_df.index
 
     # Process documents and queries to get concept indices
-    k_values = [None, 1, 2]  # None for bag of words, others for bag of concepts
+    k_values = [None, 1, 2, 4, 8]  # None for bag of words, others for bag of concepts
     results = {}
 
     batch_size = 32
@@ -146,7 +147,7 @@ if __name__ == '__main__':
             query_vectors = vectorizer.transform(query_texts)
         else:
             # Bag of concepts approach
-            if not os.path.exists(f'doc_tfidf_matrix_k_{k}.npy'):                
+            if not os.path.exists(f'cruft/fig_doc_tfidf_matrix_k_{k}.npy'):                
                 print(f"Processing documents with k={k}")
                 # Process documents
                 doc_concept_indices_list = process_documents_to_concept_indices(
@@ -195,11 +196,11 @@ if __name__ == '__main__':
                 query_tfidf_matrix = transformer.transform(query_tf_matrix)
 
                 # save the matrices
-                np.save(f'doc_tfidf_matrix_k_{k}.npy', doc_tfidf_matrix.toarray())
-                np.save(f'query_tfidf_matrix_k_{k}.npy', query_tfidf_matrix.toarray())
+                np.save(f'cruft/fig_doc_tfidf_matrix_k_{k}.npy', doc_tfidf_matrix.toarray())
+                np.save(f'cruft/fig_query_tfidf_matrix_k_{k}.npy', query_tfidf_matrix.toarray())
             else:    
-                doc_tfidf_matrix = np.load(f'doc_tfidf_matrix_k_{k}.npy')
-                query_tfidf_matrix = np.load(f'query_tfidf_matrix_k_{k}.npy')
+                doc_tfidf_matrix = np.load(f'cruft/fig_doc_tfidf_matrix_k_{k}.npy')
+                query_tfidf_matrix = np.load(f'cruft/fig_query_tfidf_matrix_k_{k}.npy')
 
         # Compute similarity between queries and documents
         if k is None:
@@ -281,7 +282,7 @@ if __name__ == '__main__':
             'bottom_10_queries': bottom_10_list
         }
 
-        output_filename = f'queries_performance_{results_key}.json'
+        output_filename = f'cruft/fig_queries_performance_{results_key}.json'
         with open(output_filename, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False, indent=4)
 
@@ -293,4 +294,4 @@ if __name__ == '__main__':
     print(comparison_df)
 
     # Save comparison to JSON
-    comparison_df.to_json('average_precisions_comparison.json', orient='index', indent=4)
+    comparison_df.to_json('cruft/fig_average_precisions_comparison.json', orient='index', indent=4)

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<xml>
+  <top>
+    <num>1</num> 
+    <title>
+      show me information about Jesus Christ
+    </title>
+  </top>
+  <top>
+    <num>2</num> 
+    <title>
+      show me information about Julius Caesar
+    </title>
+  </top>
+  <top>
+    <num>3</num> 
+    <title>
+      show me information about Socrates
+    </title>
+  </top>
+  <top>
+    <num>4</num> 
+    <title>
+      show me information about Marcus Aurelius
+    </title>
+  </top>
+  <top>
+    <num>5</num> 
+    <title>
+      show me information about Alexander the Great
+    </title>
+  </top>
+  
+  <!-- Queries 6-25: for additional 20 historical figures -->
+  <top>
+    <num>6</num> 
+    <title>
+      show me information about Leonardo da Vinci
+    </title>
+  </top>
+  <top>
+    <num>7</num> 
+    <title>
+      show me information about Napoleon Bonaparte
+    </title>
+  </top>
+  <top>
+    <num>8</num> 
+    <title>
+      show me information about Abraham Lincoln
+    </title>
+  </top>
+  <top>
+    <num>9</num> 
+    <title>
+      show me information about Albert Einstein
+    </title>
+  </top>
+  <top>
+    <num>10</num> 
+    <title>
+      show me information about Cleopatra
+    </title>
+  </top>
+  <top>
+    <num>11</num> 
+    <title>
+      show me information about George Washington
+    </title>
+  </top>
+  <top>
+    <num>12</num> 
+    <title>
+      show me information about Winston Churchill
+    </title>
+  </top>
+  <top>
+    <num>13</num> 
+    <title>
+      show me information about Mahatma Gandhi
+    </title>
+  </top>
+  <top>
+    <num>14</num> 
+    <title>
+      show me information about Genghis Khan
+    </title>
+  </top>
+  <top>
+    <num>15</num> 
+    <title>
+      show me information about Queen Victoria
+    </title>
+  </top>
+  <top>
+    <num>16</num> 
+    <title>
+      show me information about Christopher Columbus
+    </title>
+  </top>
+  <top>
+    <num>17</num> 
+    <title>
+      show me information about Martin Luther King Jr.
+    </title>
+  </top>
+  <top>
+    <num>18</num> 
+    <title>
+      show me information about Galileo Galilei
+    </title>
+  </top>
+  <top>
+    <num>19</num> 
+    <title>
+      show me information about Queen Elizabeth I
+    </title>
+  </top>
+  <top>
+    <num>20</num> 
+    <title>
+      show me information about Thomas Jefferson
+    </title>
+  </top>
+  <top>
+    <num>21</num> 
+    <title>
+      show me information about Ludwig van Beethoven
+    </title>
+  </top>
+  <top>
+    <num>22</num> 
+    <title>
+      show me information about Nelson Mandela
+    </title>
+  </top>
+  <top>
+    <num>23</num> 
+    <title>
+      show me information about J. Robert Oppenheimer
+    </title>
+  </top>
+  <top>
+    <num>24</num> 
+    <title>
+      show me information about Karl Marx
+    </title>
+  </top>
+</xml>

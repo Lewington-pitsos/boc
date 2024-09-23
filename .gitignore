@@ -1,7 +1,7 @@
 pad.py
 pad.ipynb
 
-data
-
 **/.terraform*
 *.pt
+
+cruft
