@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import os
 import time
 import torch
@@ -20,10 +19,10 @@ with open('.credentials.json') as f:
     creds = json.load(f)
 os.environ['HF_TOKEN'] = creds['HF_TOKEN']
 
-sae_id = "blocks.8.hook_resid_pre"
-release = "gpt2-small-res-jb"
-model_name = "gpt2"
-layer = 9
+release = 'gemma-scope-2b-pt-res'
+sae_id = 'layer_19/width_65k/average_l0_21'
+model_name = 'gemma-2-2b'
+layer = 20
 
 batch_size = 8
 
@@ -90,28 +89,56 @@ def process_documents_to_concept_indices(texts, model, sae, layer, batch_size=8,
 
 # Function to load documents from XML file
 def load_documents(file_path):
+    import xml.etree.ElementTree as ET
+    import pandas as pd
+
     with open(file_path, 'r', encoding='utf-8') as f:
         xml_data = f.read()
+
+    # Remove BOM if present
+    if xml_data.startswith('\ufeff'):
+        xml_data = xml_data[1:]
+
+    # Remove any leading whitespace or invisible characters
+    xml_data = xml_data.lstrip()
+
+    # Parse the XML from the cleaned string
     root = ET.fromstring(xml_data)
+
     docs = []
     for doc in root.findall('doc'):
         docno = doc.find('docno').text.strip()
-
         text = doc.find('text').text.strip()
         docs.append({'docno': docno, 'text': text})
+
     return pd.DataFrame(docs)
+
 
 # Function to load queries from XML file
 def load_queries(file_path):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
+    import xml.etree.ElementTree as ET
+    import pandas as pd
+
+    with open(file_path, 'r', encoding='utf-8') as file:
+        xml_content = file.read()
+
+    # Remove BOM if present
+    if xml_content.startswith('\ufeff'):
+        xml_content = xml_content[1:]
+
+    # Remove any leading whitespace or invisible characters
+    xml_content = xml_content.lstrip()
+
+    # Parse the XML from the cleaned string
+    root = ET.fromstring(xml_content)
+
     queries = []
     for top in root.findall('top'):
         num = top.find('num').text.strip()
         title = top.find('title').text.strip()
         queries.append({'num': num, 'title': title})
-    return pd.DataFrame(queries)
 
+    return pd.DataFrame(queries)
 # Function to load relevance judgments
 def load_qrels(file_path):
     qrels = pd.read_csv(
@@ -128,7 +155,7 @@ if __name__ == '__main__':
     for file in os.listdir('cruft'):
         os.remove(os.path.join('cruft', file))
 
-    parent_dir = 'data/movies/'
+    parent_dir = 'data/movies2/'
     docs_df = load_documents(parent_dir + 'all.xml')
     queries_df = load_queries(parent_dir + 'qry.xml')
     qrels = load_qrels(parent_dir + 'trec.txt')

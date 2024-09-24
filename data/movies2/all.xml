@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <collection>
-  <!-- Existing 20 movies -->
-<?xml version='1.0' encoding='utf-8' standalone='yes'?>
-<collection>
   <doc>
     <docno>1</docno>
     <title>The Godfather</title>
@@ -201,7 +198,7 @@
   </doc>
   <doc>
     <docno>33</docno>
-    <title>Pride & Prejudice</title>
+    <title>Pride and Prejudice</title>
     <genre>Romance</genre>
     <text>In this adaptation of Jane Austen's novel, five sisters navigate issues of marriage, morality, and misunderstandings in 19th-century England.</text>
   </doc>
