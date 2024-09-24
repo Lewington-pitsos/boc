@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<collection>
+  <!-- Existing 20 movies -->
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<collection>
+  <doc>
+    <docno>1</docno>
+    <title>The Godfather</title>
+    <genre>Crime</genre>
+    <text>This classic film tells the story of the powerful Corleone crime family of New York, focusing on the transformation of Michael Corleone from reluctant outsider to ruthless mafia boss.</text>
+  </doc>
+  <doc>
+    <docno>2</docno>
+    <title>Heat</title>
+    <genre>Crime</genre>
+    <text>A professional thief and a seasoned cop are pitted against each other in a high-stakes game of cat and mouse, set against the backdrop of Los Angeles.</text>
+  </doc>
+  <doc>
+    <docno>3</docno>
+    <title>No Country for Old Men</title>
+    <genre>Crime</genre>
+    <text>After stumbling upon the aftermath of a drug deal gone wrong, a hunter finds a briefcase full of money, which triggers a violent cat-and-mouse chase across Texas by a relentless hitman.</text>
+  </doc>
+  <doc>
+    <docno>4</docno>
+    <title>Zodiac</title>
+    <genre>Crime</genre>
+    <text>Based on true events, this film follows a cartoonist at the San Francisco Chronicle who becomes obsessed with tracking down the Zodiac Killer, a serial murderer who taunted police with cryptic messages.</text>
+  </doc>
+  <doc>
+    <docno>5</docno>
+    <title>Pulp Fiction</title>
+    <genre>Crime</genre>
+    <text>Interweaving multiple storylines involving Los Angeles mobsters, fringe players, and a mysterious briefcase, the film is known for its eclectic dialogue and ironic mix of humor and violence.</text>
+  </doc>
+  <doc>
+    <docno>6</docno>
+    <title>American Gangster</title>
+    <genre>Crime</genre>
+    <text>This film chronicles the life of Harlem drug kingpin Frank Lucas and his rise to power, smuggling heroin into the country by hiding it in the coffins of American soldiers returning from the Vietnam War.</text>
+  </doc>
+  <doc>
+    <docno>7</docno>
+    <title>The Departed</title>
+    <genre>Crime</genre>
+    <text>Set in Boston, this movie features an undercover cop and a mole within the police force trying to identify each other while infiltrating an Irish gang.</text>
+  </doc>
+  <doc>
+    <docno>8</docno>
+    <title>Se7en</title>
+    <genre>Crime</genre>
+    <text>Two detectives, one new to the city and the other about to retire, are tasked with apprehending a serial killer who uses the seven deadly sins as his motives.</text>
+  </doc>
+  <doc>
+    <docno>9</docno>
+    <title>L.A. Confidential</title>
+    <genre>Crime</genre>
+    <text>In 1950s Los Angeles, three policemen—one strait-laced, one brutal, and one sleazy—investigate a series of murders with their own brand of justice.</text>
+  </doc>
+  <doc>
+    <docno>10</docno>
+    <title>Gone Girl</title>
+    <genre>Crime</genre>
+    <text>When his wife goes missing under mysterious circumstances, a man becomes the focus of an intense media circus, which soon spirals into a series of revelations and disturbing discoveries.</text>
+  </doc>
+  <doc>
+    <docno>11</docno>
+    <title>Braveheart</title>
+    <genre>Historical</genre>
+    <text>This film tells the story of William Wallace, a 13th-century Scottish warrior who led the Scots in the First War of Scottish Independence against King Edward I of England.</text>
+  </doc>
+  <doc>
+    <docno>12</docno>
+    <title>Schindler's List</title>
+    <genre>Historical</genre>
+    <text>Based on true events, this movie recounts the story of Oskar Schindler, a German industrialist who saved over a thousand Polish-Jewish refugees during the Holocaust by employing them in his factories.</text>
+  </doc>
+  <doc>
+    <docno>13</docno>
+    <title>Gladiator</title>
+    <genre>Historical</genre>
+    <text>Set in Roman times, this film follows Maximus Decimus Meridius, a powerful Roman general betrayed and reduced to slavery who seeks revenge against the corrupt emperor who murdered his family and sent him into exile.</text>
+  </doc>
+  <doc>
+    <docno>14</docno>
+    <title>Lincoln</title>
+    <genre>Historical</genre>
+    <text>This biographical drama focuses on the final months of President Abraham Lincoln's life, including his efforts to pass the Thirteenth Amendment to the United States Constitution, which would permanently abolish slavery.</text>
+  </doc>
+  <doc>
+    <docno>15</docno>
+    <title>Amadeus</title>
+    <genre>Historical</genre>
+    <text>The story is a fictionalized biography of Wolfgang Amadeus Mozart, told through the eyes of Antonio Salieri, his secret rival and the court composer for the Emperor of Austria.</text>
+  </doc>
+  <doc>
+    <docno>16</docno>
+    <title>The Last Emperor</title>
+    <genre>Historical</genre>
+    <text>This movie is a biographical account of Pu Yi, the last Emperor of China, following his tumultuous reign which began when he was only three years old.</text>
+  </doc>
+  <doc>
+    <docno>17</docno>
+    <title>A Beautiful Mind</title>
+    <genre>Historical</genre>
+    <text>Based on the life of John Nash, a Nobel Laureate in Economics, this film depicts his early academic career at Princeton, his struggle with schizophrenia, and how his condition affects his relationships with his wife and colleagues.</text>
+  </doc>
+  <doc>
+    <docno>18</docno>
+    <title>Troy</title>
+    <genre>Historical</genre>
+    <text>Inspired by Homer’s "The Iliad", this film dramatizes the decade-long Trojan War, sparked by the elopement of Helen, wife of a Greek king, with Paris, the prince of Troy.</text>
+  </doc>
+  <doc>
+    <docno>19</docno>
+    <title>The King's Speech</title>
+    <genre>Historical</genre>
+    <text>The film tells the story of King George VI of Britain, his impromptu ascension to the throne, and the speech therapist who helped the unsure monarch overcome his stammer.</text>
+  </doc>
+  <doc>
+    <docno>20</docno>
+    <title>Hotel Rwanda</title>
+    <genre>Historical</genre>
+    <text>This powerful film recounts the true-life story of Paul Rusesabagina, a hotel manager in Rwanda who housed over a thousand Tutsi refugees during their struggle against the Hutu militia during the Rwandan genocide.</text>
+  </doc>
+
+  <!-- Added 10 Horror movies -->
+  <doc>
+    <docno>21</docno>
+    <title>The Exorcist</title>
+    <genre>Horror</genre>
+    <text>A young girl becomes possessed by a mysterious entity, prompting her mother to seek the help of two priests to save her.</text>
+  </doc>
+  <doc>
+    <docno>22</docno>
+    <title>The Shining</title>
+    <genre>Horror</genre>
+    <text>A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific visions.</text>
+  </doc>
+  <doc>
+    <docno>23</docno>
+    <title>Get Out</title>
+    <genre>Horror</genre>
+    <text>A young African-American visits his white girlfriend's mysterious family estate, uncovering a disturbing secret that he could never have imagined.</text>
+  </doc>
+  <doc>
+    <docno>24</docno>
+    <title>A Nightmare on Elm Street</title>
+    <genre>Horror</genre>
+    <text>Teenagers are terrorized by a clawed killer who attacks them in their dreams, leading to deadly real-world consequences.</text>
+  </doc>
+  <doc>
+    <docno>25</docno>
+    <title>The Conjuring</title>
+    <genre>Horror</genre>
+    <text>Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.</text>
+  </doc>
+  <doc>
+    <docno>26</docno>
+    <title>Alien</title>
+    <genre>Horror</genre>
+    <text>The crew of a commercial space tug encounters a deadly alien creature after investigating a mysterious signal on a distant planet.</text>
+  </doc>
+  <doc>
+    <docno>27</docno>
+    <title>It</title>
+    <genre>Horror</genre>
+    <text>A group of bullied kids band together to destroy a shape-shifting monster that disguises itself as a clown and preys on the town's children.</text>
+  </doc>
+  <doc>
+    <docno>28</docno>
+    <title>Halloween</title>
+    <genre>Horror</genre>
+    <text>Fifteen years after murdering his sister on Halloween night, Michael Myers escapes from a mental hospital and returns to his small hometown to kill again.</text>
+  </doc>
+  <doc>
+    <docno>29</docno>
+    <title>The Silence of the Lambs</title>
+    <genre>Horror</genre>
+    <text>A young FBI cadet seeks the help of an incarcerated and manipulative cannibal killer to catch another serial killer who skins his victims.</text>
+  </doc>
+  <doc>
+    <docno>30</docno>
+    <title>Hereditary</title>
+    <genre>Horror</genre>
+    <text>After the family matriarch passes away, her grieving family is haunted by tragic and disturbing occurrences, unraveling dark secrets.</text>
+  </doc>
+
+  <!-- Added 10 Romance movies -->
+  <doc>
+    <docno>31</docno>
+    <title>Titanic</title>
+    <genre>Romance</genre>
+    <text>A young aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</text>
+  </doc>
+  <doc>
+    <docno>32</docno>
+    <title>The Notebook</title>
+    <genre>Romance</genre>
+    <text>A young couple falls in love in the 1940s but are soon separated by war and social differences, only to reunite years later.</text>
+  </doc>
+  <doc>
+    <docno>33</docno>
+    <title>Pride & Prejudice</title>
+    <genre>Romance</genre>
+    <text>In this adaptation of Jane Austen's novel, five sisters navigate issues of marriage, morality, and misunderstandings in 19th-century England.</text>
+  </doc>
+  <doc>
+    <docno>34</docno>
+    <title>La La Land</title>
+    <genre>Romance</genre>
+    <text>An aspiring actress and a jazz musician pursue their dreams in Los Angeles and fall in love, but their ambitions threaten to tear them apart.</text>
+  </doc>
+  <doc>
+    <docno>35</docno>
+    <title>Casablanca</title>
+    <genre>Romance</genre>
+    <text>Set during World War II, an American expatriate must choose between his love for a woman and helping her and her husband escape from the Nazis.</text>
+  </doc>
+  <doc>
+    <docno>36</docno>
+    <title>A Walk to Remember</title>
+    <genre>Romance</genre>
+    <text>A rebellious teen falls for a conservative, religious girl, and their unexpected romance changes both of their lives.</text>
+  </doc>
+  <doc>
+    <docno>37</docno>
+    <title>Romeo + Juliet</title>
+    <genre>Romance</genre>
+    <text>A modern adaptation of Shakespeare's classic love story, set in a stylized urban environment while retaining the original dialogue.</text>
+  </doc>
+  <doc>
+    <docno>38</docno>
+    <title>Pretty Woman</title>
+    <genre>Romance</genre>
+    <text>A wealthy businessman hires a free-spirited prostitute to accompany him to social events, and they develop an unexpected relationship.</text>
+  </doc>
+  <doc>
+    <docno>39</docno>
+    <title>Silver Linings Playbook</title>
+    <genre>Romance</genre>
+    <text>After a stint in a mental institution, a former teacher meets a mysterious woman with her own problems, and they form a unique bond.</text>
+  </doc>
+  <doc>
+    <docno>40</docno>
+    <title>Eternal Sunshine of the Spotless Mind</title>
+    <genre>Romance</genre>
+    <text>An estranged couple undergoes a medical procedure to have each other erased from their memories, but they rediscover their feelings during the process.</text>
+  </doc>
+
+  <!-- Added 10 Comedy movies -->
+  <doc>
+    <docno>41</docno>
+    <title>The Hangover</title>
+    <genre>Comedy</genre>
+    <text>After a wild bachelor party in Las Vegas, three friends wake up with no memory of the night before and must find the missing groom before his wedding.</text>
+  </doc>
+  <doc>
+    <docno>42</docno>
+    <title>Superbad</title>
+    <genre>Comedy</genre>
+    <text>High school friends try to enjoy their last weeks together and aim to lose their virginity before graduation, leading to a series of misadventures.</text>
+  </doc>
+  <doc>
+    <docno>43</docno>
+    <title>Anchorman: The Legend of Ron Burgundy</title>
+    <genre>Comedy</genre>
+    <text>In the 1970s, an eccentric anchorman clashes with his new female counterpart in a male-dominated broadcasting world.</text>
+  </doc>
+  <doc>
+    <docno>44</docno>
+    <title>Monty Python and the Holy Grail</title>
+    <genre>Comedy</genre>
+    <text>A comedic retelling of the legend of King Arthur and his Knights of the Round Table on their quest to find the Holy Grail.</text>
+  </doc>
+  <doc>
+    <docno>45</docno>
+    <title>Groundhog Day</title>
+    <genre>Comedy</genre>
+    <text>A cynical weatherman finds himself reliving the same day over and over again while covering the annual Groundhog Day event.</text>
+  </doc>
+  <doc>
+    <docno>46</docno>
+    <title>Ghostbusters</title>
+    <genre>Comedy</genre>
+    <text>Three parapsychologists start a ghost-catching business in New York City, battling supernatural forces and saving the city from a paranormal apocalypse.</text>
+  </doc>
+  <doc>
+    <docno>47</docno>
+    <title>Dumb and Dumber</title>
+    <genre>Comedy</genre>
+    <text>Two dim-witted friends set out on a cross-country road trip to return a briefcase full of money to its rightful owner, unwittingly becoming entangled in a crime plot.</text>
+  </doc>
+  <doc>
+    <docno>48</docno>
+    <title>Step Brothers</title>
+    <genre>Comedy</genre>
+    <text>Two middle-aged men who still live with their single parents are forced to live together as brothers when their parents marry.</text>
+  </doc>
+  <doc>
+    <docno>49</docno>
+    <title>Mean Girls</title>
+    <genre>Comedy</genre>
+    <text>A teenager navigates the complexities of high school social cliques after being homeschooled in Africa for most of her life.</text>
+  </doc>
+  <doc>
+    <docno>50</docno>
+    <title>Airplane!</title>
+    <genre>Comedy</genre>
+    <text>A former pilot with a fear of flying must land a commercial airplane after the crew becomes incapacitated, leading to a series of comedic mishaps.</text>
+  </doc>
+
+
+  <doc>
+    <docno>51</docno>
+    <title>Blade Runner</title>
+    <genre>Sci-Fi</genre>
+    <text>In a dystopian future Los Angeles, a blade runner hunts down bioengineered humanoids known as replicants, questioning his own identity along the way.</text>
+  </doc>
+  <doc>
+    <docno>52</docno>
+    <title>Interstellar</title>
+    <genre>Sci-Fi</genre>
+    <text>A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival as Earth becomes uninhabitable.</text>
+  </doc>
+  <doc>
+    <docno>53</docno>
+    <title>The Matrix</title>
+    <genre>Sci-Fi</genre>
+    <text>A computer hacker learns about the true nature of his reality and his role in the war against its controllers.</text>
+  </doc>
+  <doc>
+    <docno>54</docno>
+    <title>Alien</title>
+    <genre>Sci-Fi</genre>
+    <text>The crew of a commercial spacecraft encounters a deadly alien creature after investigating a mysterious transmission.</text>
+  </doc>
+  <doc>
+    <docno>55</docno>
+    <title>Inception</title>
+    <genre>Sci-Fi</genre>
+    <text>A skilled thief who steals information by infiltrating dreams is given a chance at redemption if he can successfully perform an inception.</text>
+  </doc>
+  <doc>
+    <docno>56</docno>
+    <title>2001: A Space Odyssey</title>
+    <genre>Sci-Fi</genre>
+    <text>An exploration of humanity's evolution, artificial intelligence, and extraterrestrial life, centered around a mysterious black monolith.</text>
+  </doc>
+  <doc>
+    <docno>57</docno>
+    <title>Star Wars: Episode IV – A New Hope</title>
+    <genre>Sci-Fi</genre>
+    <text>A young farm boy becomes involved in a galactic conflict between the oppressive Empire and the Rebel Alliance.</text>
+  </doc>
+  <doc>
+    <docno>58</docno>
+    <title>E.T. the Extra-Terrestrial</title>
+    <genre>Sci-Fi</genre>
+    <text>A lonely boy befriends an extraterrestrial stranded on Earth and helps him return home while keeping him hidden from authorities.</text>
+  </doc>
+  <doc>
+    <docno>59</docno>
+    <title>Gravity</title>
+    <genre>Sci-Fi</genre>
+    <text>After a catastrophic accident, two astronauts work together to survive and return to Earth from outer space.</text>
+  </doc>
+  <doc>
+    <docno>60</docno>
+    <title>Avatar</title>
+    <genre>Sci-Fi</genre>
+    <text>A paraplegic Marine is sent to the moon Pandora on a unique mission but becomes torn between following orders and protecting an alien civilization.</text>
+  </doc>
+
+  <!-- Added 10 War movies -->
+  <doc>
+    <docno>61</docno>
+    <title>Saving Private Ryan</title>
+    <genre>War</genre>
+    <text>During World War II, a group of U.S. soldiers embarks on a mission to rescue a paratrooper whose brothers have been killed in action.</text>
+  </doc>
+  <doc>
+    <docno>62</docno>
+    <title>Apocalypse Now</title>
+    <genre>War</genre>
+    <text>A U.S. Army captain is sent on a dangerous mission to assassinate a renegade colonel who has set himself up as a god among a local tribe during the Vietnam War.</text>
+  </doc>
+  <doc>
+    <docno>63</docno>
+    <title>Full Metal Jacket</title>
+    <genre>War</genre>
+    <text>The film follows U.S. Marines through their brutal boot camp training and the horrors they face during the Vietnam War.</text>
+  </doc>
+  <doc>
+    <docno>64</docno>
+    <title>Dunkirk</title>
+    <genre>War</genre>
+    <text>Allied soldiers from Belgium, the British Empire, and France are surrounded by the German army and evacuated during a fierce battle in World War II.</text>
+  </doc>
+  <doc>
+    <docno>65</docno>
+    <title>Platoon</title>
+    <genre>War</genre>
+    <text>A young soldier in Vietnam faces moral dilemmas and the chaos of war as he becomes caught between two sergeants with differing philosophies.</text>
+  </doc>
+  <doc>
+    <docno>66</docno>
+    <title>Letters from Iwo Jima</title>
+    <genre>War</genre>
+    <text>The story of the Battle of Iwo Jima during World War II, as told from the perspective of the Japanese soldiers who fought it.</text>
+  </doc>
+  <doc>
+    <docno>67</docno>
+    <title>Black Hawk Down</title>
+    <genre>War</genre>
+    <text>U.S. soldiers are sent into Somalia to capture warlords but face intense fighting when their helicopters are shot down.</text>
+  </doc>
+  <doc>
+    <docno>68</docno>
+    <title>The Hurt Locker</title>
+    <genre>War</genre>
+    <text>An elite Army bomb squad unit must come together in a city where everyone is a potential enemy and every object could be a deadly bomb.</text>
+  </doc>
+  <doc>
+    <docno>69</docno>
+    <title>1917</title>
+    <genre>War</genre>
+    <text>During World War I, two British soldiers are given an impossible mission to deliver a message that will stop a deadly attack.</text>
+  </doc>
+  <doc>
+    <docno>70</docno>
+    <title>Schindler's List</title>
+    <genre>War</genre>
+    <text>Based on true events, a German industrialist saves the lives of more than a thousand Jewish refugees during the Holocaust.</text>
+  </doc>
+
+  <!-- Added 10 Drama movies -->
+  <doc>
+    <docno>71</docno>
+    <title>The Shawshank Redemption</title>
+    <genre>Drama</genre>
+    <text>Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.</text>
+  </doc>
+  <doc>
+    <docno>72</docno>
+    <title>Forrest Gump</title>
+    <genre>Drama</genre>
+    <text>The story of a man with a low IQ who unwittingly influences several defining historical events in 20th-century America.</text>
+  </doc>
+  <doc>
+    <docno>73</docno>
+    <title>Fight Club</title>
+    <genre>Drama</genre>
+    <text>An insomniac office worker and a soap salesman form an underground fight club that evolves into something much more.</text>
+  </doc>
+  <doc>
+    <docno>74</docno>
+    <title>The Godfather: Part II</title>
+    <genre>Drama</genre>
+    <text>The continuing saga of the Corleone crime family, as the new don expands his empire while flashbacks show his father's rise to power.</text>
+  </doc>
+  <doc>
+    <docno>75</docno>
+    <title>Good Will Hunting</title>
+    <genre>Drama</genre>
+    <text>A janitor at MIT has a gift for mathematics but needs help from a psychologist to find direction in his life.</text>
+  </doc>
+  <doc>
+    <docno>76</docno>
+    <title>One Flew Over the Cuckoo's Nest</title>
+    <genre>Drama</genre>
+    <text>A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse.</text>
+  </doc>
+  <doc>
+    <docno>77</docno>
+    <title>The Pursuit of Happyness</title>
+    <genre>Drama</genre>
+    <text>A struggling salesman takes custody of his son as he begins a life-changing professional endeavor.</text>
+  </doc>
+  <doc>
+    <docno>78</docno>
+    <title>Whiplash</title>
+    <genre>Drama</genre>
+    <text>A young drummer enrolls in a competitive music conservatory where his teacher pushes him to the brink of his abilities.</text>
+  </doc>
+  <doc>
+    <docno>79</docno>
+    <title>Parasite</title>
+    <genre>Drama</genre>
+    <text>A poor family schemes to become employed by a wealthy household by infiltrating their domestic staff.</text>
+  </doc>
+  <doc>
+    <docno>80</docno>
+    <title>12 Years a Slave</title>
+    <genre>Drama</genre>
+    <text>In the pre-Civil War United States, a free Black man is abducted and sold into slavery, enduring years of hardship before regaining his freedom.</text>
+  </doc>
+</collection>

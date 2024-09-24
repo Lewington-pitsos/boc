@@ -12,6 +12,7 @@ import json
 from scipy.sparse import csr_matrix
 import xml.etree.ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sentence_transformers import SentenceTransformer
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -19,36 +20,12 @@ with open('.credentials.json') as f:
     creds = json.load(f)
 os.environ['HF_TOKEN'] = creds['HF_TOKEN']
 
-# Load the model and SAE
-# sae_id = "blocks.8.hook_resid_pre"
-# release = "gpt2-small-res-jb"
-# model_name = "gpt2"
-# layer = 9
-
-# sae_id = "blocks.12.hook_resid_post"
-# release = "gemma-2b-res-jb"
-# model_name = 'gemma-2b'
-# layer = 13
-
-# release = 'gemma-scope-2b-pt-res'
-# sae_id = 'layer_19/width_1m/average_l0_16'
-# model_name = 'gemma-2b'
-# layer = 20
-
-
-release = 'gemma-scope-2b-pt-res'
-sae_id = 'layer_19/width_65k/average_l0_21'
-model_name = 'gemma-2-2b'
-layer = 20
-
-
-# release = 'gemma-scope-2b-pt-res'
-# sae_id = 'layer_19/width_16k/average_l0_23'
-# model_name = 'gemma-2-2b'
-# layer = 20
+sae_id = "blocks.8.hook_resid_pre"
+release = "gpt2-small-res-jb"
+model_name = "gpt2"
+layer = 9
 
 batch_size = 8
-
 
 model = HookedTransformer.from_pretrained(model_name, device=device)
 
@@ -167,10 +144,14 @@ if __name__ == '__main__':
     docs_df['index'] = docs_df.index
     queries_df['index'] = queries_df.index
 
-    # Process documents and queries to get concept indices
-    k_values = [32, 16, 8, 4, 2, 1, None]  # None for bag of words, others for bag of concepts
-    results = {}
+    # Load SentenceTransformer model
+    print("Loading SentenceTransformer model")
+    model_st = SentenceTransformer("dunzhang/stella_en_400M_v5", trust_remote_code=True)
+    query_prompt_name = "s2p_query"
 
+    # Process documents and queries to get concept indices
+    k_values = ['sentence_transformer', 16, 4, 1, None]  # None for bag of words, others for bag of concepts
+    results = {}
 
     for k in k_values:
         if k is None:
@@ -178,6 +159,38 @@ if __name__ == '__main__':
             vectorizer = TfidfVectorizer()
             doc_vectors = vectorizer.fit_transform(doc_texts)
             query_vectors = vectorizer.transform(query_texts)
+            similarities = cosine_similarity(query_vectors, doc_vectors)
+
+        elif k == 'sentence_transformer':
+            # Sentence transformer approach
+            if not os.path.exists('cruft/fig_doc_embeddings_st.npy'):
+                print("Processing documents with sentence transformer model")
+                batch_size_st = 8  # Adjust batch size if needed
+                doc_embeddings_list = []
+                for i in range(0, len(doc_texts), batch_size_st):
+                    batch_docs = doc_texts[i:i+batch_size_st]
+                    batch_embeddings = model_st.encode(batch_docs, batch_size=batch_size_st, show_progress_bar=True)
+                    doc_embeddings_list.append(batch_embeddings)
+                doc_embeddings = np.vstack(doc_embeddings_list)
+                np.save('cruft/fig_doc_embeddings_st.npy', doc_embeddings)
+            else:
+                doc_embeddings = np.load('cruft/fig_doc_embeddings_st.npy')
+
+            if not os.path.exists('cruft/fig_query_embeddings_st.npy'):
+                print("Processing queries with sentence transformer model")
+                batch_size_st = 8
+                query_embeddings_list = []
+                for i in range(0, len(query_texts), batch_size_st):
+                    batch_queries = query_texts[i:i+batch_size_st]
+                    batch_embeddings = model_st.encode(batch_queries, batch_size=batch_size_st, show_progress_bar=True, prompt_name=query_prompt_name)
+                    query_embeddings_list.append(batch_embeddings)
+                query_embeddings = np.vstack(query_embeddings_list)
+                np.save('cruft/fig_query_embeddings_st.npy', query_embeddings)
+            else:
+                query_embeddings = np.load('cruft/fig_query_embeddings_st.npy')
+
+            # Compute similarities
+            similarities = cosine_similarity(query_embeddings, doc_embeddings)
         else:
             # Bag of concepts approach
             if not os.path.exists(f'cruft/fig_doc_tfidf_matrix_k_{k}.npy'):                
@@ -235,12 +248,7 @@ if __name__ == '__main__':
                 doc_tfidf_matrix = np.load(f'cruft/fig_doc_tfidf_matrix_k_{k}.npy')
                 query_tfidf_matrix = np.load(f'cruft/fig_query_tfidf_matrix_k_{k}.npy')
 
-        # Compute similarity between queries and documents
-        if k is None:
-            # Using bag of words vectors
-            similarities = cosine_similarity(query_vectors, doc_vectors)
-        else:
-            # Using bag of concepts vectors
+            # Compute similarity between queries and documents
             similarities = cosine_similarity(query_tfidf_matrix, doc_tfidf_matrix)
 
         # Evaluate performance
@@ -296,7 +304,12 @@ if __name__ == '__main__':
             print(f'Average Precision at {n_eval} for k={k}: {avg_precision_at_k:.4f}')
 
         # Store results
-        results_key = 'bag_of_words' if k is None else f'bag_of_concepts_k_{k}'
+        if k is None:
+            results_key = 'bag_of_words'
+        elif k == 'sentence_transformer':
+            results_key = 'sentence_transformer'
+        else:
+            results_key = f'bag_of_concepts_k_{k}'
         results[results_key] = {
             'results_df': results_df,
             'avg_precisions': avg_precisions
@@ -333,9 +346,3 @@ if __name__ == '__main__':
 
     # Save comparison to JSON
     comparison_df.to_json('cruft/fig_average_precisions_comparison.json', orient='index', indent=4)
-    
-
-
-
-
-
